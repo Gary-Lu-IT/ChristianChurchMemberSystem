@@ -1,0 +1,2 @@
+# ChristianChurchMemberSystem
+汎用基督教會會員管理系統
