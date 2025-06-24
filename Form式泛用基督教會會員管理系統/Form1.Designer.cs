@@ -32,11 +32,11 @@
             menuStrip1 = new MenuStrip();
             使用者帳號AToolStripMenuItem = new ToolStripMenuItem();
             TsmiLogin = new ToolStripMenuItem();
+            教友MToolStripMenuItem = new ToolStripMenuItem();
+            TsmiMemberList = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
             TsslTime = new ToolStripStatusLabel();
             TmrTime = new System.Windows.Forms.Timer(components);
-            教友MToolStripMenuItem = new ToolStripMenuItem();
-            資料列表LToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
@@ -61,9 +61,23 @@
             // TsmiLogin
             // 
             TsmiLogin.Name = "TsmiLogin";
-            TsmiLogin.Size = new Size(224, 26);
+            TsmiLogin.Size = new Size(136, 26);
             TsmiLogin.Text = "登入(&I)";
             TsmiLogin.Click += TsmiLogin_Click;
+            // 
+            // 教友MToolStripMenuItem
+            // 
+            教友MToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TsmiMemberList });
+            教友MToolStripMenuItem.Name = "教友MToolStripMenuItem";
+            教友MToolStripMenuItem.Size = new Size(77, 24);
+            教友MToolStripMenuItem.Text = "教友(&M)";
+            // 
+            // TsmiMemberList
+            // 
+            TsmiMemberList.Name = "TsmiMemberList";
+            TsmiMemberList.Size = new Size(224, 26);
+            TsmiMemberList.Text = "資料列表(&L)";
+            TsmiMemberList.Click += TsmiMemberList_Click;
             // 
             // statusStrip1
             // 
@@ -84,19 +98,6 @@
             // TmrTime
             // 
             TmrTime.Tick += TickToShowCurrentTime;
-            // 
-            // 教友MToolStripMenuItem
-            // 
-            教友MToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { 資料列表LToolStripMenuItem });
-            教友MToolStripMenuItem.Name = "教友MToolStripMenuItem";
-            教友MToolStripMenuItem.Size = new Size(77, 24);
-            教友MToolStripMenuItem.Text = "教友(&M)";
-            // 
-            // 資料列表LToolStripMenuItem
-            // 
-            資料列表LToolStripMenuItem.Name = "資料列表LToolStripMenuItem";
-            資料列表LToolStripMenuItem.Size = new Size(224, 26);
-            資料列表LToolStripMenuItem.Text = "資料列表(&L)";
             // 
             // Form1
             // 
@@ -126,6 +127,6 @@
         private ToolStripMenuItem 使用者帳號AToolStripMenuItem;
         private ToolStripMenuItem TsmiLogin;
         private ToolStripMenuItem 教友MToolStripMenuItem;
-        private ToolStripMenuItem 資料列表LToolStripMenuItem;
+        private ToolStripMenuItem TsmiMemberList;
     }
 }

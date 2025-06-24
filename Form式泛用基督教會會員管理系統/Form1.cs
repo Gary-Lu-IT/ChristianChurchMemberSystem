@@ -1,4 +1,5 @@
 using Form式泛用基督教會會員管理系統.SubForms.Account;
+using Form式泛用基督教會會員管理系統.SubForms.Member;
 
 namespace Form式泛用基督教會會員管理系統
 {
@@ -25,6 +26,27 @@ namespace Form式泛用基督教會會員管理系統
         {
             FrmLogin FL = new();
             FL.ShowDialog(this);
+        }
+        /// <summary>教友列表。</summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TsmiMemberList_Click(object sender, EventArgs e)
+        {
+            bool FormFound = false;
+            foreach(Form F in this.MdiChildren)
+            {
+                if (F.Name == "FrmMemberList")
+                {
+                    F.WindowState = FormWindowState.Maximized;
+                    FormFound = true;
+                }
+            }
+            if (!FormFound)
+            {
+                FrmMemberView MV = new();
+                MV.MdiParent = this;
+                MV.Show();
+            }
         }
     }
 }
