@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Form_AllPurposeChurchMemberControl/1.0.0": {
+        "runtime": {
+          "Form_AllPurposeChurchMemberControl.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Form_AllPurposeChurchMemberControl/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -32,6 +32,8 @@
             menuStrip1 = new MenuStrip();
             statusStrip1 = new StatusStrip();
             TmrTime = new System.Windows.Forms.Timer(components);
+            TsslTime = new ToolStripStatusLabel();
+            statusStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
@@ -46,11 +48,22 @@
             // statusStrip1
             // 
             statusStrip1.ImageScalingSize = new Size(20, 20);
-            statusStrip1.Location = new Point(0, 428);
+            statusStrip1.Items.AddRange(new ToolStripItem[] { TsslTime });
+            statusStrip1.Location = new Point(0, 425);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(800, 22);
+            statusStrip1.Size = new Size(800, 25);
             statusStrip1.TabIndex = 2;
             statusStrip1.Text = "statusStrip1";
+            // 
+            // TmrTime
+            // 
+            TmrTime.Tick += TickToShowCurrentTime;
+            // 
+            // TsslTime
+            // 
+            TsslTime.Name = "TsslTime";
+            TsslTime.Size = new Size(21, 19);
+            TsslTime.Text = "   ";
             // 
             // Form1
             // 
@@ -63,6 +76,8 @@
             MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "汎用基督教會會員管理系統(視窗版)";
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -72,5 +87,6 @@
         private MenuStrip menuStrip1;
         private StatusStrip statusStrip1;
         private System.Windows.Forms.Timer TmrTime;
+        private ToolStripStatusLabel TsslTime;
     }
 }
