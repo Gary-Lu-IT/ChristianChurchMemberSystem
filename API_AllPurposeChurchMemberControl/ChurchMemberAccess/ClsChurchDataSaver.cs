@@ -1,4 +1,8 @@
-﻿namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
+﻿using DAL_AllPurposeChurchMemberControl.ChurchMembers.Users;
+using DAL_AllPurposeChurchMemberControl.ChurchSystem;
+using System.Security.Cryptography;
+
+namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
 {
     /// <summary>基督教會會員資料存取器(資料有效性檢查後叫Writer做)</summary>
     public class ClsChurchDataSaver
@@ -48,12 +52,6 @@ C# 方法簽名：
 二、帳號與權限模組 (Account & Permission Module) 此模組負責系統的使用者登入、角色管理、權限控制、密碼重設等.
 •
 資料表：users, login_logs。
-1.
-使用者登入 (UserLogin)
-◦
-功能：驗證使用者帳號密碼，並記錄登入日誌。
-◦
-C# 方法簽名：
 2.
 變更使用者密碼 (ChangePassword)
 ◦
@@ -309,7 +307,62 @@ public class MemberQueryDto
 }
 這些功能與參數設計是基於您提供的系統文件和資料庫架構進行的初步建議。在實際開發中，還需考慮錯誤處理、日誌記錄、非同步操作 (async/await)、資料驗證、以及更細緻的權限控制邏輯等。
          */
-        #region 帳號(users)
+        #region 帳號與權限模組 (Account & Permission Module)
+        /// <summary>使用者登入：驗證使用者帳號密碼，並記錄登入日誌。</summary>
+        /// <param name="param"></param>
+        /// <returns></returns>
+        public static ClsLoginReturn UserLogin(ClsLoginParam param)
+        {
+            if(string.IsNullOrWhiteSpace(param.LoginId )||string.IsNullOrWhiteSpace(param.Password))
+            {
+                throw new ChurchMemberException(SystemReturnMessage.EmptyIDOrPassword);
+            }
+            return ClsChurchDataWriter.UserLogin(param);
+        }
+        #endregion
+
+        #region 私有函數
+        #region 密碼處理(PBKDF2)
+        /// <summary>密碼加密</summary>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        public static string HashPassword(string password)
+        {
+            // 使用隨機產生的 16 byte 鹽值
+            byte[] salt = RandomNumberGenerator.GetBytes(16);
+
+            // 使用 PBKDF2 產生 32 byte 密碼雜湊
+            byte[] hash = Rfc2898DeriveBytes.Pbkdf2(
+                password,
+                salt,
+                iterations: 100_000,  // 計算次數越高越安全
+                HashAlgorithmName.SHA256, 32);
+
+            // 將鹽值與雜湊合併後轉為 Base64 儲存
+            return Convert.ToBase64String(salt.Concat(hash).ToArray());
+        }
+        /// <summary>密碼驗證</summary>
+        /// <param name="password"></param>
+        /// <param name="hashedPassword"></param>
+        /// <returns></returns>
+        public static bool VerifyPassword(string password, string hashedPassword)
+        {
+            byte[] decoded = Convert.FromBase64String(hashedPassword);
+            byte[] salt = decoded.Take(16).ToArray();
+            byte[] storedHash = decoded.Skip(16).ToArray();
+
+            // 用相同鹽值與參數重新計算雜湊
+            byte[] hashToCheck = Rfc2898DeriveBytes.Pbkdf2(
+                password,
+                salt,
+                iterations: 100_000,
+                HashAlgorithmName.SHA256,
+                32);
+
+            // 比較兩個雜湊是否一致
+            return CryptographicOperations.FixedTimeEquals(storedHash, hashToCheck);
+        }
+        #endregion
         #endregion
     }
 }

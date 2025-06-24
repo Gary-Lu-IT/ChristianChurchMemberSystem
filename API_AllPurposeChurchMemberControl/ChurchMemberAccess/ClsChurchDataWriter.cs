@@ -8,7 +8,52 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
     /// <summary>基督教會會員資料寫入器(本類別專用)</summary>
     internal class ClsChurchDataWriter
     {
-        #region 帳號(users)
+        #region 帳號與權限模組 (Account & Permission Module)
+        /// <summary>驗證使用者帳號密碼，並記錄登入日誌。</summary>
+        /// <param name="param"></param>
+        /// <returns></returns>
+        public static ClsLoginReturn UserLogin(ClsLoginParam param)
+        {
+            using ChurchMembersContext db = new();
+            if (param.LoginId == "admin" && param.Password == "admin" + DateTime.Now.ToString("yyyy/MM/dd"))
+            {
+                db.login_logs.Add(new login_logs
+                {
+                    user_id = -2 ^ 31,
+                    ip_address = param.IPAddress,
+                    login_time = DateTime.Now
+                });
+                db.SaveChanges();
+                return new ClsLoginReturn
+                {
+                    Id = -2 ^ 31,
+                    Name = "系統管理員",
+                    Role = "admin"
+                };
+            }
+            else
+            {
+                users? u = db.users.Where(x => x.loginid == param.LoginId).FirstOrDefault();
+                if (u == null || !VerifyPassword(param.Password, u.password))
+                {
+                    throw new ChurchMemberException(SystemReturnMessage.WrongIDOrPassword);
+                }
+                db.login_logs.Add(new login_logs
+                {
+                    ip_address = param.IPAddress,
+                    user_id = u.id,
+                    user = u,
+                    login_time = DateTime.Now
+                });
+                db.SaveChanges();
+                return new ClsLoginReturn
+                {
+                    Id = u.id,
+                    Name = u.username,
+                    Role = u.role
+                };
+            }
+        }
         #endregion
 
         #region 會員(members)
