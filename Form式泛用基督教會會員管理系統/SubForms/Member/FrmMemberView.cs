@@ -1,4 +1,5 @@
-﻿using System;
+﻿using API_AllPurposeChurchMemberControl.ChurchMemberAccess;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,19 @@ namespace Form式泛用基督教會會員管理系統.SubForms.Member
         public FrmMemberView()
         {
             InitializeComponent();
+            LoadMemberData();
         }
+
+        #region 私有函數
+        /// <summary>載入會員資料</summary>
+        public void LoadMemberData()
+        {
+            DgvMemberView.Rows.Clear();
+            foreach(var md in ClsChurchDataSaver.GetMemberList())
+            {
+                DgvMemberView.Rows.Add(md.Id, md.Name, md.Baptized ? "是" : "否");
+            }
+        }
+        #endregion
     }
 }

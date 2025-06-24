@@ -1,4 +1,5 @@
 ﻿using API_AllPurposeChurchMemberControl.SQLiteDB.Entity;
+using DAL_AllPurposeChurchMemberControl.ChurchMembers.Members;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Users;
 using DAL_AllPurposeChurchMemberControl.ChurchSystem;
 using System.Security.Cryptography;
@@ -9,6 +10,49 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
     internal class ClsChurchDataWriter
     {
         #region 會員資料管理模組 (Member Data Management Module)
+        /// <summary>查詢所有會員或根據條件篩選會員清單。</summary>
+        /// <param name="param"></param>
+        /// <returns></returns>
+        public static IList<ClsMemberData> GetMemberList(ClsMemberQueryParam? param = null)
+        {
+            using ChurchMembersContext db = new();
+            IQueryable<ClsMemberData> datas = db.members.Select(x => new ClsMemberData
+            {
+                Id=x.id,
+                Baptized = x.baptized ?? false,
+                BaptismDate = x.baptism_date,
+                Birthdate = x.birthdate,
+                Email = x.email ?? string.Empty,
+                Gender = x.gender ?? string.Empty,
+                GroupName = x.group_name ?? string.Empty,
+                Name = x.name,
+                Notes = x.notes ?? string.Empty,
+                Phone = x.phone ?? string.Empty,
+                Address = x.address ?? string.Empty,
+                Transferred = x.transferred ?? false,
+                FamilyId = x.family_id,
+            });
+            if (param != null)
+            {
+                if (!string.IsNullOrWhiteSpace(param.NameKeyword))
+                {
+                    datas=datas.Where(x=>x.Name.Contains(param.NameKeyword));
+                }
+                if (!string.IsNullOrWhiteSpace(param.PhoneKeyword))
+                {
+                    datas=datas.Where(x=>x.Phone.Contains(param.PhoneKeyword));
+                }
+                if(!string.IsNullOrWhiteSpace(param.GroupName))
+                {
+                    datas=datas.Where(x=>x.GroupName.Contains(param.GroupName));
+                }
+                if (param.IsBaptized != null)
+                {
+                    datas = datas.Where(x => x.Baptized == param.IsBaptized);
+                }
+            }
+            return [.. datas];
+        }
         #endregion
 
         #region 帳號與權限模組 (Account & Permission Module)
@@ -57,9 +101,6 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
                 };
             }
         }
-        #endregion
-
-        #region 會員(members)
         #endregion
 
         #region 私有函數
