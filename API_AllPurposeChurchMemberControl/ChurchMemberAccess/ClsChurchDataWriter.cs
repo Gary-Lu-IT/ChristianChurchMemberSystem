@@ -10,6 +10,26 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
     internal class ClsChurchDataWriter
     {
         #region 會員資料管理模組 (Member Data Management Module)
+        /// <summary>新增一個會員的基本資料。</summary>
+        /// <param name="data"></param>
+        public static void AddMember(ClsMemberData data)
+        {
+            using ChurchMembersContext db = new();
+            db.members.Add(new members
+            {
+                name = data.Name,
+                gender = data.Gender,
+                birthdate = data.Birthdate,
+                phone = data.Phone,
+                email = data.Email,
+                address = data.Address,
+                baptized = data.Baptized,
+                baptism_date = data.BaptismDate,
+                group_name = data.GroupName,
+                notes = data.Notes
+            });
+            db.SaveChanges();
+        }
         /// <summary>查詢所有會員或根據條件篩選會員清單。</summary>
         /// <param name="param"></param>
         /// <returns></returns>
