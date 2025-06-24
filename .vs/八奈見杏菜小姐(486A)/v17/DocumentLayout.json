@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B9505AD-4B2C-3B38-53E1-0052ECA9DEC7}|API_AllPurposeChurchMemberControl\\\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71API.csproj|c:\\users\\gary lu\\documents\\visual studio 2022\\christianchurchmembersystem\\api_allpurposechurchmembercontrol\\churchmemberaccess\\clsexceptionwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B9505AD-4B2C-3B38-53E1-0052ECA9DEC7}|API_AllPurposeChurchMemberControl\\\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71API.csproj|solutionrelative:api_allpurposechurchmembercontrol\\churchmemberaccess\\clsexceptionwriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B9505AD-4B2C-3B38-53E1-0052ECA9DEC7}|API_AllPurposeChurchMemberControl\\\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71API.csproj|c:\\users\\gary lu\\documents\\visual studio 2022\\christianchurchmembersystem\\api_allpurposechurchmembercontrol\\churchmemberaccess\\clschurchdatawriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B9505AD-4B2C-3B38-53E1-0052ECA9DEC7}|API_AllPurposeChurchMemberControl\\\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71API.csproj|solutionrelative:api_allpurposechurchmembercontrol\\churchmemberaccess\\clschurchdatawriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B9505AD-4B2C-3B38-53E1-0052ECA9DEC7}|API_AllPurposeChurchMemberControl\\\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71API.csproj|c:\\users\\gary lu\\documents\\visual studio 2022\\christianchurchmembersystem\\api_allpurposechurchmembercontrol\\churchmemberaccess\\clschurchdatasaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B9505AD-4B2C-3B38-53E1-0052ECA9DEC7}|API_AllPurposeChurchMemberControl\\\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71API.csproj|solutionrelative:api_allpurposechurchmembercontrol\\churchmemberaccess\\clschurchdatasaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,20 +26,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClsExceptionWriter.cs",
-              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\ChurchMemberAccess\\ClsExceptionWriter.cs",
-              "RelativeDocumentMoniker": "API_AllPurposeChurchMemberControl\\ChurchMemberAccess\\ClsExceptionWriter.cs",
-              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\ChurchMemberAccess\\ClsExceptionWriter.cs",
-              "RelativeToolTip": "API_AllPurposeChurchMemberControl\\ChurchMemberAccess\\ClsExceptionWriter.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACwAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ClsChurchDataSaver.cs",
+              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\ChurchMemberAccess\\ClsChurchDataSaver.cs",
+              "RelativeDocumentMoniker": "API_AllPurposeChurchMemberControl\\ChurchMemberAccess\\ClsChurchDataSaver.cs",
+              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\ChurchMemberAccess\\ClsChurchDataSaver.cs",
+              "RelativeToolTip": "API_AllPurposeChurchMemberControl\\ChurchMemberAccess\\ClsChurchDataSaver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T01:05:13.04Z",
+              "WhenOpened": "2025-06-24T01:42:52.325Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClsChurchDataWriter.cs",
+              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\ChurchMemberAccess\\ClsChurchDataWriter.cs",
+              "RelativeDocumentMoniker": "API_AllPurposeChurchMemberControl\\ChurchMemberAccess\\ClsChurchDataWriter.cs",
+              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\ChurchMemberAccess\\ClsChurchDataWriter.cs",
+              "RelativeToolTip": "API_AllPurposeChurchMemberControl\\ChurchMemberAccess\\ClsChurchDataWriter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T01:41:53.549Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
