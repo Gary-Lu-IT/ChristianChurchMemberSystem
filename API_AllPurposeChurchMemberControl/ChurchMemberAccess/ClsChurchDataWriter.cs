@@ -8,6 +8,9 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
     /// <summary>基督教會會員資料寫入器(本類別專用)</summary>
     internal class ClsChurchDataWriter
     {
+        #region 會員資料管理模組 (Member Data Management Module)
+        #endregion
+
         #region 帳號與權限模組 (Account & Permission Module)
         /// <summary>驗證使用者帳號密碼，並記錄登入日誌。</summary>
         /// <param name="param"></param>

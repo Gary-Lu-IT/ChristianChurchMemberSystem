@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DAL_AllPurposeChurchMemberControl")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cad4e9dd5653c742f8c46bae06c90572c2895642")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42c60b7375773a81edd050441b361428f2993fb3")]
 [assembly: System.Reflection.AssemblyProductAttribute("DAL_AllPurposeChurchMemberControl")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DAL_AllPurposeChurchMemberControl")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,5 +1,13 @@
-# ChristianChurchMemberSystem 基督教會會員管理系統 - 核心功能清單（通用共通功能）
-
+# ChristianChurchMemberSystem 
+# 基督教會會員管理系統 - 核心功能清單（通用共通功能）
+***
+## [專案組成結構]
+八奈見杏菜小姐(486A)
+- Form式泛用基督教會會員管理系統
+- 泛用基督教會會員管理系統API
+- 泛用基督教會會員管理系統DAL 
+***
+---
 以下功能為無論教會規模、牧養模式、是否已有系統等條件下，皆建議開發的基本功能模組（Minimum Viable Product, MVP）：
 
 ---

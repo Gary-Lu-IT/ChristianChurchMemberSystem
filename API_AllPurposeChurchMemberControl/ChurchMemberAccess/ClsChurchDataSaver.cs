@@ -307,6 +307,8 @@ public class MemberQueryDto
 }
 這些功能與參數設計是基於您提供的系統文件和資料庫架構進行的初步建議。在實際開發中，還需考慮錯誤處理、日誌記錄、非同步操作 (async/await)、資料驗證、以及更細緻的權限控制邏輯等。
          */
+        #region 會員資料管理模組 (Member Data Management Module)
+        #endregion
         #region 帳號與權限模組 (Account & Permission Module)
         /// <summary>使用者登入：驗證使用者帳號密碼，並記錄登入日誌。</summary>
         /// <param name="param"></param>
