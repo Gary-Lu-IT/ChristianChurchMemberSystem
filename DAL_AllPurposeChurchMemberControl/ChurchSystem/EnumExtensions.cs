@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace DAL_AllPurposeChurchMemberControl
+namespace DAL_AllPurposeChurchMemberControl.ChurchSystem
 {
     /// <summary>自訂訊息屬性</summary>
     [AttributeUsage(AttributeTargets.Field)]
@@ -24,11 +24,8 @@ namespace DAL_AllPurposeChurchMemberControl
         [DataType("帳號與密碼有錯誤")]
         WrongIDOrPassword = 101,
 
-        [DataType("狀態值已存在")]
-        StateExists = 201,
-
-        [DataType("狀態值不存在")]
-        StateNotExist = 202,
+        [DataType("帳號與密碼不可空白")]
+        EmptyIDOrPassword = 102,
 
         [DataType("系統不明錯誤")]
         SystemError = 1001

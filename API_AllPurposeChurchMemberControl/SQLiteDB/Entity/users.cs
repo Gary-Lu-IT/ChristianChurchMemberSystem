@@ -15,6 +15,8 @@ public partial class users
 
     public int? member_id { get; set; }
 
+    public string loginid { get; set; } = null!;
+
     public virtual ICollection<login_logs> login_logs { get; set; } = new List<login_logs>();
 
     public virtual members? member { get; set; }
