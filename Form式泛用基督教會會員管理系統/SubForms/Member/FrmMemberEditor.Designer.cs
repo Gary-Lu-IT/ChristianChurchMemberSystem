@@ -46,6 +46,10 @@
             DtpBaptizedDate = new DateTimePicker();
             BtnCancel = new Button();
             BtnConfirm = new Button();
+            TxtGroupName = new TextBox();
+            label8 = new Label();
+            TxtNotes = new TextBox();
+            label9 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -194,6 +198,7 @@
             BtnCancel.TabIndex = 17;
             BtnCancel.Text = "離開";
             BtnCancel.UseVisualStyleBackColor = true;
+            BtnCancel.Click += BtnCancel_Click;
             // 
             // BtnConfirm
             // 
@@ -205,11 +210,49 @@
             BtnConfirm.Text = "確定";
             BtnConfirm.UseVisualStyleBackColor = true;
             // 
+            // TxtGroupName
+            // 
+            TxtGroupName.Location = new Point(150, 221);
+            TxtGroupName.Name = "TxtGroupName";
+            TxtGroupName.Size = new Size(250, 33);
+            TxtGroupName.TabIndex = 18;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(44, 224);
+            label8.Name = "label8";
+            label8.Size = new Size(100, 25);
+            label8.TabIndex = 19;
+            label8.Text = "小組/團契";
+            // 
+            // TxtNotes
+            // 
+            TxtNotes.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            TxtNotes.Location = new Point(150, 260);
+            TxtNotes.Multiline = true;
+            TxtNotes.Name = "TxtNotes";
+            TxtNotes.Size = new Size(250, 110);
+            TxtNotes.TabIndex = 20;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(52, 263);
+            label9.Name = "label9";
+            label9.Size = new Size(92, 25);
+            label9.TabIndex = 21;
+            label9.Text = "注意事項";
+            // 
             // FrmMemberEditor
             // 
             AutoScaleDimensions = new SizeF(12F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(866, 382);
+            Controls.Add(label9);
+            Controls.Add(TxtNotes);
+            Controls.Add(label8);
+            Controls.Add(TxtGroupName);
             Controls.Add(BtnCancel);
             Controls.Add(BtnConfirm);
             Controls.Add(DtpBaptizedDate);
@@ -230,7 +273,7 @@
             Controls.Add(label1);
             Font = new Font("Microsoft JhengHei UI", 12F);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FrmMemberEditor";
@@ -260,5 +303,9 @@
         private DateTimePicker DtpBaptizedDate;
         private Button BtnCancel;
         private Button BtnConfirm;
+        private TextBox TxtGroupName;
+        private Label label8;
+        private TextBox TxtNotes;
+        private Label label9;
     }
 }

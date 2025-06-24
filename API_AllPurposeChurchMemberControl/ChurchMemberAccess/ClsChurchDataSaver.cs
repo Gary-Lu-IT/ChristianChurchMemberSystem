@@ -304,6 +304,14 @@ public class MemberQueryDto
         {
             ClsChurchDataWriter.AddMember(data);
         }
+        /// <summary>根據會員 ID 查詢單一會員的詳細資料。</summary>
+        /// <param name="MemberId"></param>
+        /// <returns></returns>
+        public static ClsMemberData? GetMemberById(int MemberId)
+        {
+            ClsMemberData? md = ClsChurchDataWriter.GetMemberById(MemberId);
+            return md;
+        }
         /// <summary>取得會員清單：查詢所有會員或根據條件篩選會員清單。</summary>
         /// <param name="param"></param>
         /// <returns></returns>

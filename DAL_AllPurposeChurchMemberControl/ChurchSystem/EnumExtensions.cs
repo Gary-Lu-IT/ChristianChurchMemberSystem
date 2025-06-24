@@ -18,15 +18,19 @@ namespace DAL_AllPurposeChurchMemberControl.ChurchSystem
     [Serializable]
     public enum SystemReturnMessage
     {
+        /// <summary>成功</summary>
         [DataType("成功")]
         Success = 1,
-
+        /// <summary>帳號與密碼有錯誤</summary>
         [DataType("帳號與密碼有錯誤")]
         WrongIDOrPassword = 101,
-
+        /// <summary>帳號與密碼不可空白</summary>
         [DataType("帳號與密碼不可空白")]
         EmptyIDOrPassword = 102,
-
+        /// <summary>教友ID不存在</summary>
+        [DataType("教友ID不存在")]
+        MemberIDNotExist=121,
+        /// <summary>系統不明錯誤</summary>
         [DataType("系統不明錯誤")]
         SystemError = 1001
     }

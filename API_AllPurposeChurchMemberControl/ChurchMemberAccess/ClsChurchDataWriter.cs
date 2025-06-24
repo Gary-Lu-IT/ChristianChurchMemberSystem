@@ -30,6 +30,29 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
             });
             db.SaveChanges();
         }
+        /// <summary>根據會員 ID 查詢單一會員的詳細資料。</summary>
+        /// <param name="MemberId"></param>
+        /// <returns></returns>
+        public static ClsMemberData? GetMemberById(int MemberId)
+        {
+            return new ChurchMembersContext().members.Where(x => x.id == MemberId)
+                .Select(x => new ClsMemberData
+                {
+                    Id = x.id,
+                    Baptized = x.baptized ?? false,
+                    BaptismDate = x.baptism_date,
+                    Birthdate = x.birthdate,
+                    Email = x.email ?? string.Empty,
+                    Gender = x.gender ?? string.Empty,
+                    GroupName = x.group_name ?? string.Empty,
+                    Name = x.name,
+                    Notes = x.notes ?? string.Empty,
+                    Phone = x.phone ?? string.Empty,
+                    Address = x.address ?? string.Empty,
+                    Transferred = x.transferred ?? false,
+                    FamilyId = x.family_id,
+                }).FirstOrDefault();
+        }
         /// <summary>查詢所有會員或根據條件篩選會員清單。</summary>
         /// <param name="param"></param>
         /// <returns></returns>
