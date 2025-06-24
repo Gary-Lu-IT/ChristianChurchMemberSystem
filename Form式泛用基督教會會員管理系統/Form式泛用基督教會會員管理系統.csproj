@@ -9,4 +9,9 @@
     <AssemblyName>Form_AllPurposeChurchMemberControl</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\API_AllPurposeChurchMemberControl\泛用基督教會會員管理系統API.csproj" />
+    <ProjectReference Include="..\DAL_AllPurposeChurchMemberControl\泛用基督教會會員管理系統DAL.csproj" />
+  </ItemGroup>
+
 </Project>

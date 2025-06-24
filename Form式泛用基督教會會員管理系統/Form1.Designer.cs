@@ -30,20 +30,40 @@
         {
             components = new System.ComponentModel.Container();
             menuStrip1 = new MenuStrip();
+            使用者帳號AToolStripMenuItem = new ToolStripMenuItem();
+            TsmiLogin = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
-            TmrTime = new System.Windows.Forms.Timer(components);
             TsslTime = new ToolStripStatusLabel();
+            TmrTime = new System.Windows.Forms.Timer(components);
+            教友MToolStripMenuItem = new ToolStripMenuItem();
+            資料列表LToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { 使用者帳號AToolStripMenuItem, 教友MToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.Size = new Size(800, 28);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
+            // 
+            // 使用者帳號AToolStripMenuItem
+            // 
+            使用者帳號AToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TsmiLogin });
+            使用者帳號AToolStripMenuItem.Name = "使用者帳號AToolStripMenuItem";
+            使用者帳號AToolStripMenuItem.Size = new Size(118, 24);
+            使用者帳號AToolStripMenuItem.Text = "使用者帳號(&A)";
+            // 
+            // TsmiLogin
+            // 
+            TsmiLogin.Name = "TsmiLogin";
+            TsmiLogin.Size = new Size(224, 26);
+            TsmiLogin.Text = "登入(&I)";
+            TsmiLogin.Click += TsmiLogin_Click;
             // 
             // statusStrip1
             // 
@@ -55,15 +75,28 @@
             statusStrip1.TabIndex = 2;
             statusStrip1.Text = "statusStrip1";
             // 
-            // TmrTime
-            // 
-            TmrTime.Tick += TickToShowCurrentTime;
-            // 
             // TsslTime
             // 
             TsslTime.Name = "TsslTime";
             TsslTime.Size = new Size(21, 19);
             TsslTime.Text = "   ";
+            // 
+            // TmrTime
+            // 
+            TmrTime.Tick += TickToShowCurrentTime;
+            // 
+            // 教友MToolStripMenuItem
+            // 
+            教友MToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { 資料列表LToolStripMenuItem });
+            教友MToolStripMenuItem.Name = "教友MToolStripMenuItem";
+            教友MToolStripMenuItem.Size = new Size(77, 24);
+            教友MToolStripMenuItem.Text = "教友(&M)";
+            // 
+            // 資料列表LToolStripMenuItem
+            // 
+            資料列表LToolStripMenuItem.Name = "資料列表LToolStripMenuItem";
+            資料列表LToolStripMenuItem.Size = new Size(224, 26);
+            資料列表LToolStripMenuItem.Text = "資料列表(&L)";
             // 
             // Form1
             // 
@@ -76,6 +109,8 @@
             MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "汎用基督教會會員管理系統(視窗版)";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             statusStrip1.ResumeLayout(false);
             statusStrip1.PerformLayout();
             ResumeLayout(false);
@@ -88,5 +123,9 @@
         private StatusStrip statusStrip1;
         private System.Windows.Forms.Timer TmrTime;
         private ToolStripStatusLabel TsslTime;
+        private ToolStripMenuItem 使用者帳號AToolStripMenuItem;
+        private ToolStripMenuItem TsmiLogin;
+        private ToolStripMenuItem 教友MToolStripMenuItem;
+        private ToolStripMenuItem 資料列表LToolStripMenuItem;
     }
 }
