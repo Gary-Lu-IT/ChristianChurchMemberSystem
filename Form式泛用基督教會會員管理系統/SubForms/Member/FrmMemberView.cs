@@ -24,11 +24,20 @@ namespace Form式泛用基督教會會員管理系統.SubForms.Member
         public void LoadMemberData()
         {
             DgvMemberView.Rows.Clear();
-            foreach(var md in ClsChurchDataSaver.GetMemberList())
+            foreach (var md in ClsChurchDataSaver.GetMemberList())
             {
                 DgvMemberView.Rows.Add(md.Id, md.Name, md.Baptized ? "是" : "否");
             }
         }
         #endregion
+        /// <summary>新增教友(會員)</summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            FrmMemberEditor me = new();
+            me.ShowDialog(this);
+            LoadMemberData();
+        }
     }
 }

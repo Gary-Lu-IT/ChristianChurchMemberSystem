@@ -47,6 +47,7 @@
             BtnAdd.TabIndex = 5;
             BtnAdd.Text = "新增";
             BtnAdd.UseVisualStyleBackColor = true;
+            BtnAdd.Click += BtnAdd_Click;
             // 
             // BtnEdit
             // 
@@ -115,7 +116,7 @@
             Controls.Add(BtnEdit);
             Controls.Add(BtnAdd);
             Font = new Font("Microsoft JhengHei UI", 12F);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "FrmMemberView";
             ShowIcon = false;
             Text = "教友資料清單";

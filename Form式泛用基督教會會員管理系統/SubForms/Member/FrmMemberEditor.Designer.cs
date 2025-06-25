@@ -209,6 +209,7 @@
             BtnConfirm.TabIndex = 16;
             BtnConfirm.Text = "確定";
             BtnConfirm.UseVisualStyleBackColor = true;
+            BtnConfirm.Click += BtnConfirm_Click;
             // 
             // TxtGroupName
             // 
