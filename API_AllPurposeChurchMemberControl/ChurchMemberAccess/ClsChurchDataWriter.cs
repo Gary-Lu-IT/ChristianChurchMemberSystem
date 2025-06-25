@@ -78,6 +78,33 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
                     FamilyId = x.family_id,
                 }).FirstOrDefault();
         }
+        /// <summary>從系統中移除一個會員資料</summary>
+        /// <param name="MemberId"></param>
+        public static void DeleteMember(int MemberId)
+        {
+            using ChurchMembersContext db = new();
+            members? m = db.members.Where(x => x.id == MemberId).FirstOrDefault();
+            if (m == null)
+            {
+                throw new ChurchMemberException(SystemReturnMessage.MemberIDNotExist);
+            }
+            if (m.stopusedate != null)
+            {
+                throw new ChurchMemberException(SystemReturnMessage.MemberDataStopped);
+            }
+            if (db.event_attendance.Where(x => x.member_id == MemberId).Any()
+                || db.offerings.Where(x => x.member_id == MemberId).Any()
+                || db.attendance.Where(x => x.member_id == MemberId).Any()
+                || db.users.Where(x => x.member_id == MemberId).Any())
+            {
+                //有參加活動、有奉獻、有帳號就只能停用
+                m.stopusedate = DateTime.Now;
+            }
+            else {
+                db.members.Remove(m);
+            }
+            db.SaveChanges();
+        }
         /// <summary>查詢所有會員或根據條件篩選會員清單。</summary>
         /// <param name="param"></param>
         /// <returns></returns>

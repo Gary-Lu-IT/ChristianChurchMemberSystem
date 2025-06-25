@@ -6,6 +6,7 @@
         public int Id { get; set; }
         public string Name { get; set; } = null!;
         public string Gender { get; set; } = string.Empty;
+        /// <summary>出生年月日</summary>
         public DateTime? Birthdate { get; set; }
         public string Phone { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
@@ -16,5 +17,7 @@
         public string GroupName { get; set; } = string.Empty;
         public int? FamilyId { get; set; } // 如果與 Family 關聯
         public string Notes { get; set; } = string.Empty;
+        /// <summary>停用日期</summary>
+        public DateTime? StoppedTime { get; set; }
     }
 }

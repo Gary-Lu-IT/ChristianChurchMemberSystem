@@ -35,6 +35,7 @@
             編號 = new DataGridViewTextBoxColumn();
             姓名 = new DataGridViewTextBoxColumn();
             是否受洗 = new DataGridViewTextBoxColumn();
+            STOPPED = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)DgvMemberView).BeginInit();
             SuspendLayout();
             // 
@@ -69,13 +70,15 @@
             BtnDelete.TabIndex = 7;
             BtnDelete.Text = "刪除";
             BtnDelete.UseVisualStyleBackColor = true;
+            BtnDelete.Click += BtnDelete_Click;
             // 
             // DgvMemberView
             // 
             DgvMemberView.AllowUserToAddRows = false;
             DgvMemberView.AllowUserToDeleteRows = false;
+            DgvMemberView.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             DgvMemberView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DgvMemberView.Columns.AddRange(new DataGridViewColumn[] { 編號, 姓名, 是否受洗 });
+            DgvMemberView.Columns.AddRange(new DataGridViewColumn[] { 編號, 姓名, 是否受洗, STOPPED });
             DgvMemberView.Location = new Point(12, 12);
             DgvMemberView.Name = "DgvMemberView";
             DgvMemberView.ReadOnly = true;
@@ -107,6 +110,14 @@
             是否受洗.ReadOnly = true;
             是否受洗.Width = 125;
             // 
+            // STOPPED
+            // 
+            STOPPED.HeaderText = "是否停用";
+            STOPPED.MinimumWidth = 6;
+            STOPPED.Name = "STOPPED";
+            STOPPED.ReadOnly = true;
+            STOPPED.Width = 125;
+            // 
             // FrmMemberView
             // 
             AutoScaleDimensions = new SizeF(12F, 25F);
@@ -134,5 +145,6 @@
         private DataGridViewTextBoxColumn 編號;
         private DataGridViewTextBoxColumn 姓名;
         private DataGridViewTextBoxColumn 是否受洗;
+        private DataGridViewTextBoxColumn STOPPED;
     }
 }

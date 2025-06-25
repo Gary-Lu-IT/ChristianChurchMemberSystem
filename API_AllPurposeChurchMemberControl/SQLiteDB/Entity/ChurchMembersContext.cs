@@ -92,6 +92,7 @@ public partial class ChurchMembersContext : DbContext
                 .HasDefaultValue(false)
                 .HasColumnType("BOOLEAN");
             entity.Property(e => e.birthdate).HasColumnType("DATE");
+            entity.Property(e => e.stopusedate).HasColumnType("datetime");
             entity.Property(e => e.transferred)
                 .HasDefaultValue(false)
                 .HasColumnType("BOOLEAN");

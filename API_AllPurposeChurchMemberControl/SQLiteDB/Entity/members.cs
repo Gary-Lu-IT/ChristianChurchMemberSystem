@@ -31,6 +31,8 @@ public partial class members
 
     public string? notes { get; set; }
 
+    public DateTime? stopusedate { get; set; }
+
     public virtual ICollection<attendance> attendance { get; set; } = new List<attendance>();
 
     public virtual ICollection<event_attendance> event_attendance { get; set; } = new List<event_attendance>();

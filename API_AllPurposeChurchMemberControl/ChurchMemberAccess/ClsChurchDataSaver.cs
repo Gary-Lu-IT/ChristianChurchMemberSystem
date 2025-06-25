@@ -311,6 +311,21 @@ public class MemberQueryDto
             ClsMemberData? md = ClsChurchDataWriter.GetMemberById(MemberId);
             return md;
         }
+        /// <summary>刪除會員：從系統中移除一個會員資料</summary>
+        /// <param name="MemberId"></param>
+        public static void DeleteMember(int MemberId)
+        {
+            ClsMemberData? md=GetMemberById(MemberId);
+            if (md == null)
+            {
+                throw new ChurchMemberException(SystemReturnMessage.MemberIDNotExist);
+            }
+            if (md.StoppedTime != null)
+            {
+                throw new ChurchMemberException(SystemReturnMessage.MemberDataStopped);
+            }
+            ClsChurchDataWriter.DeleteMember(MemberId);
+        }
         /// <summary>取得會員清單：查詢所有會員或根據條件篩選會員清單。</summary>
         /// <param name="param"></param>
         /// <returns></returns>
