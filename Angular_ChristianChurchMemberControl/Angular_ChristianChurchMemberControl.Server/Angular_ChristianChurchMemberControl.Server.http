@@ -1,6 +1,0 @@
-@Angular_ChristianChurchMemberControl.Server_HostAddress = http://localhost:5094
-
-GET {{Angular_ChristianChurchMemberControl.Server_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
