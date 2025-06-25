@@ -1,0 +1,6 @@
+@WEBAPI_ChristianChurchMemberSystem_HostAddress = http://localhost:5246
+
+GET {{WEBAPI_ChristianChurchMemberSystem_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
