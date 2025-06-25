@@ -14,13 +14,6 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
 一、會員資料管理模組 (Member Data Management Module) 此模組負責處理會員的基本資料、受洗狀況、家庭關係等。
 •
 資料表：members, families。
-C# 方法簽名：
-2.
-更新會員資料 (UpdateMember)
-◦
-功能：用於修改現有會員的各項基本資料。
-◦
-C# 方法簽名：
 3.
 取得單一會員資料 (GetMemberById)
 ◦
@@ -298,13 +291,19 @@ public class MemberQueryDto
 這些功能與參數設計是基於您提供的系統文件和資料庫架構進行的初步建議。在實際開發中，還需考慮錯誤處理、日誌記錄、非同步操作 (async/await)、資料驗證、以及更細緻的權限控制邏輯等。
          */
         #region 會員資料管理模組 (Member Data Management Module)
-        /// <summary>新增一個會員的基本資料。</summary>
+        /// <summary>新增會員資料：新增一個會員的基本資料。</summary>
         /// <param name="data"></param>
         public static void AddMember(ClsMemberData data)
         {
             ClsChurchDataWriter.AddMember(data);
         }
-        /// <summary>根據會員 ID 查詢單一會員的詳細資料。</summary>
+        /// <summary>更新會員資料：修改現有會員的各項基本資料。</summary>
+        /// <param name="data"></param>
+        public static void UpdateMember(ClsMemberData data)
+        {
+            ClsChurchDataWriter.UpdateMember(data);
+        }
+        /// <summary>取得單一會員資料：根據會員 ID 查詢單一會員的詳細資料。</summary>
         /// <param name="MemberId"></param>
         /// <returns></returns>
         public static ClsMemberData? GetMemberById(int MemberId)

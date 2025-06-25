@@ -18,6 +18,26 @@ namespace Form式泛用基督教會會員管理系統.SubForms.Member
                 {
                     MessageBox.Show("教友資料不存在無法編輯！將進入新增教友資料模式。", "編輯教友資料", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
+                else
+                {
+                    TxtName.Text = TargetMemberData.Name;
+                    if (TargetMemberData.Birthdate != null)
+                    {
+                        DtpBirthday.Value = TargetMemberData.Birthdate.Value;
+                    }
+                    RdoMan.Checked = TargetMemberData.Gender == "男";
+                    RdoWoman.Checked = !RdoMan.Checked;
+                    TxtPhone.Text= TargetMemberData.Phone;
+                    TxtEMail.Text = TargetMemberData.Email;
+                    TxtAddress.Text= TargetMemberData.Address;
+                    ChkBaptized.Checked = TargetMemberData.Baptized;
+                    if (TargetMemberData.BaptismDate != null)
+                    {
+                        DtpBaptizedDate.Value = TargetMemberData.BaptismDate.Value;
+                    }
+                    TxtGroupName.Text= TargetMemberData.GroupName;
+                    TxtNotes.Text= TargetMemberData.Notes;
+                }
             }
         }
         /// <summary>取消/離開。</summary>
@@ -51,6 +71,26 @@ namespace Form式泛用基督教會會員管理系統.SubForms.Member
                         Notes = TxtNotes.Text
                     });
                     MessageBox.Show("新增成功。", "教友資料編輯作業", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Close();
+                }
+                else
+                {
+                    //編輯模式
+                    ClsChurchDataSaver.UpdateMember(new ClsMemberData
+                    {
+                        Id=TargetMemberData.Id,
+                        Name = TxtName.Text,
+                        Gender = RdoMan.Checked ? "男" : "女",
+                        Birthdate = DtpBirthday.Value,
+                        Phone = TxtPhone.Text,
+                        Email = TxtEMail.Text,
+                        Address = TxtAddress.Text,
+                        Baptized = ChkBaptized.Checked,
+                        BaptismDate = ChkBaptized.Checked ? DtpBaptizedDate.Value : null,
+                        GroupName = TxtGroupName.Text,
+                        Notes = TxtNotes.Text
+                    });
+                    MessageBox.Show("修改成功。", "教友資料編輯作業", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Close();
                 }
             }

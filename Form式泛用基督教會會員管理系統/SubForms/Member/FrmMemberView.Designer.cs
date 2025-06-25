@@ -58,6 +58,7 @@
             BtnEdit.TabIndex = 6;
             BtnEdit.Text = "修改";
             BtnEdit.UseVisualStyleBackColor = true;
+            BtnEdit.Click += BtnEdit_Click;
             // 
             // BtnDelete
             // 

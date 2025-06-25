@@ -30,6 +30,31 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
             });
             db.SaveChanges();
         }
+        /// <summary>修改現有會員的各項基本資料。</summary>
+        /// <param name="data"></param>
+        public static void UpdateMember(ClsMemberData data)
+        {
+            using ChurchMembersContext db = new();
+            members? m = db.members.Where(x => x.id == data.Id).FirstOrDefault();
+            if (m == null)
+            {
+                throw new ChurchMemberException(SystemReturnMessage.MemberIDNotExist);
+            }
+            else
+            {
+                m.name= data.Name;
+                m.birthdate=data.Birthdate;
+                m.gender = data.Gender;
+                m.phone= data.Phone;
+                m.email= data.Email;
+                m.address= data.Address;
+                m.baptized= data.Baptized;
+                m.baptism_date= data.BaptismDate;
+                m.group_name = data.GroupName;
+                m.notes=data.Notes;
+                db.SaveChanges();
+            }
+        }
         /// <summary>根據會員 ID 查詢單一會員的詳細資料。</summary>
         /// <param name="MemberId"></param>
         /// <returns></returns>

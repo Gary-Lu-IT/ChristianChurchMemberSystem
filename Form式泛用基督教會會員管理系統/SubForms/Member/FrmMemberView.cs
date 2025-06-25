@@ -39,5 +39,22 @@ namespace Form式泛用基督教會會員管理系統.SubForms.Member
             me.ShowDialog(this);
             LoadMemberData();
         }
+        /// <summary>編輯教友(會員)資料</summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnEdit_Click(object sender, EventArgs e)
+        {
+            if (DgvMemberView.SelectedCells.Count > 0)
+            {
+                int id = Convert.ToInt32(DgvMemberView.SelectedCells[0].OwningRow.Cells[0].Value);
+                FrmMemberEditor me = new(id);
+                me.ShowDialog(this);
+                LoadMemberData();
+            }
+            else
+            {
+                MessageBox.Show("請選擇要修改資料的教友。", "無法編輯教友資料", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
