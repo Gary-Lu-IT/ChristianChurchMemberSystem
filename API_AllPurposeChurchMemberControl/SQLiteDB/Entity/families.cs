@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace API_AllPurposeChurchMemberControl.SQLiteDB.Entity;
+﻿namespace API_AllPurposeChurchMemberControl.SQLiteDB.Entity;
 
 public partial class families
 {

@@ -14,18 +14,6 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
 一、會員資料管理模組 (Member Data Management Module) 此模組負責處理會員的基本資料、受洗狀況、家庭關係等。
 •
 資料表：members, families。
-3.
-取得單一會員資料 (GetMemberById)
-◦
-功能：根據會員 ID 查詢單一會員的詳細資料。
-◦
-C# 方法簽名：
-5.
-刪除會員 (DeleteMember)
-◦
-功能：從系統中移除一個會員資料 [需要基於業務邏輯判斷是否允許物理刪除或僅標記為非活躍]。
-◦
-C# 方法簽名：
 6.
 管理家庭關係 (ManageFamilyRelation)
 ◦
