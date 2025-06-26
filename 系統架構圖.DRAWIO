@@ -1,0 +1,37 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="第1頁" id="xwCW6TP5Jn_L3Ke1LY7x">
+    <mxGraphModel dx="1042" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5KIfBzAkbotJBmWXOVmB-1" value="飯用基督教會會員管理系統API" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="600" width="760" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="5KIfBzAkbotJBmWXOVmB-3" value="例外狀況&lt;div&gt;資料庫&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=18;" vertex="1" parent="5KIfBzAkbotJBmWXOVmB-1">
+          <mxGeometry x="520" y="360" width="80" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="5KIfBzAkbotJBmWXOVmB-2" value="教會&lt;div&gt;會員&lt;/div&gt;&lt;div&gt;資料庫&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=18;" vertex="1" parent="5KIfBzAkbotJBmWXOVmB-1">
+          <mxGeometry x="200" y="360" width="80" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="5KIfBzAkbotJBmWXOVmB-6" value="ClsChurchDataSaver&lt;div&gt;(教友資料存取檢核口)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="5KIfBzAkbotJBmWXOVmB-1">
+          <mxGeometry x="140" y="40" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5KIfBzAkbotJBmWXOVmB-5" value="ClsChurchDataWriter&lt;div&gt;(教友資料庫存取窗口)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="180" y="800" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5KIfBzAkbotJBmWXOVmB-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="5KIfBzAkbotJBmWXOVmB-5" target="5KIfBzAkbotJBmWXOVmB-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5KIfBzAkbotJBmWXOVmB-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5KIfBzAkbotJBmWXOVmB-6" target="5KIfBzAkbotJBmWXOVmB-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5KIfBzAkbotJBmWXOVmB-9" value="泛用基督教會會員管理系統" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=36;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="440" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5KIfBzAkbotJBmWXOVmB-10" value="八奈見杏菜小姐(486A)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=light-dark(#0000ff, #ededed);" vertex="1" parent="1">
+          <mxGeometry x="320" y="80" width="240" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
