@@ -45,5 +45,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WEBAPI_ChristianChurchMemberSystem.Controllers.MemberController",
+    "Method": "UpdateMember",
+    "RelativePath": "Member/UpdateMember",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "DAL_AllPurposeChurchMemberControl.ChurchMembers.Members.ClsMemberData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

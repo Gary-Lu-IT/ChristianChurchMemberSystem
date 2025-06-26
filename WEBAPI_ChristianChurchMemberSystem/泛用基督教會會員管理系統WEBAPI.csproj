@@ -21,4 +21,13 @@
     <ProjectReference Include="..\DAL_AllPurposeChurchMemberControl\泛用基督教會會員管理系統DAL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="ChurchMembers.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="ExceptionLog.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

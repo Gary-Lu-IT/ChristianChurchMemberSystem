@@ -12,6 +12,11 @@
             <param name="data"></param>
             <returns></returns>
         </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.MemberController.UpdateMember(DAL_AllPurposeChurchMemberControl.ChurchMembers.Members.ClsMemberData)">
+            <summary>更新會員資料：修改現有會員的各項基本資料。</summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
         <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.MemberController.GetMemberList(DAL_AllPurposeChurchMemberControl.ChurchMembers.Members.ClsMemberQueryParam)">
             <summary>取得會員清單：查詢所有會員或根據條件篩選會員清單。</summary>
             <param name="param"></param>

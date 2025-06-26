@@ -33,7 +33,7 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
         {
             MethodBase? CallerOfThisFunc = new StackTrace().GetFrame(0).GetMethod();
             using ExceptionLogContext elc = new();
-            int iMax = !elc.EXCEPTIONDATA.Any() ? (-2 ^ 31) : elc.EXCEPTIONDATA.Max(x => x.SERIAL) + 1;
+            int iMax = elc.EXCEPTIONDATA.Any() ? elc.EXCEPTIONDATA.Max(x => x.SERIAL) + 1 : (-2 ^ 31);
             elc.EXCEPTIONDATA.Add(new EXCEPTIONDATA
             {
                 SERIAL = iMax,
