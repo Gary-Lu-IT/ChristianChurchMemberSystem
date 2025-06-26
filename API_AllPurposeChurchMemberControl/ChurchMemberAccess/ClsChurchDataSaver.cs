@@ -1,4 +1,5 @@
-﻿using DAL_AllPurposeChurchMemberControl.ChurchMembers.Members;
+﻿using DAL_AllPurposeChurchMemberControl.ChurchMembers.Family;
+using DAL_AllPurposeChurchMemberControl.ChurchMembers.Members;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Users;
 using DAL_AllPurposeChurchMemberControl.ChurchSystem;
 using System.Security.Cryptography;
@@ -321,7 +322,45 @@ public class MemberQueryDto
         {
             return ClsChurchDataWriter.GetMemberList(param);
         }
+        #region 家庭資料管理模組 (Family Data Management Module)
+        /// <summary>新增家庭資料</summary>
+        /// <param name="families"></param>
+        public static void AddFamily(ClsFamilies families)
+        {
+            ClsChurchDataWriter.AddFamily(families);
+        }
+        /// <summary>更新家庭資訊</summary>
+        /// <param name="families"></param>
+        /// <exception cref="ChurchMemberException"></exception>
+        public static void UpdateFamily(ClsFamilies families)
+        {
+            ClsChurchDataWriter.UpdateFamily(families);
+        }
+        /// <summary>依Id取得家庭資訊</summary>
+        /// <param name="FamilyId"></param>
+        /// <returns></returns>
+        public static ClsFamilies? GetFamilyById(int FamilyId)
+        {
+            return ClsChurchDataWriter.GetFamilyById(FamilyId);
+        }
+        /// <summary>刪除家庭資料</summary>
+        /// <param name="FamilyId"></param>
+        /// <exception cref="ChurchMemberException"></exception>
+        public static void DeleteFamily(int FamilyId)
+        {
+            if(GetFamilyById(FamilyId) == null)
+            {
+                throw new ChurchMemberException(SystemReturnMessage.FamilyIDNotExist);
+            }
+            if (ClsChurchDataWriter.HasFamilyMembers(FamilyId))
+            {
+                throw new ChurchMemberException(SystemReturnMessage.FamilyHasMembers);
+            }
+            ClsChurchDataWriter.DeleteFamily(FamilyId);
+        }
         #endregion
+        #endregion
+
         #region 帳號與權限模組 (Account & Permission Module)
         /// <summary>使用者登入：驗證使用者帳號密碼，並記錄登入日誌。</summary>
         /// <param name="param"></param>

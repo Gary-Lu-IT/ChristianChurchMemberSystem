@@ -33,6 +33,12 @@ namespace DAL_AllPurposeChurchMemberControl.ChurchSystem
         /// <summary>教友資料已停用</summary>
         [DataType("教友資料已停用")]
         MemberDataStopped=122,
+        /// <summary>家庭編號不存在</summary>
+        [DataType("家庭編號不存在")]
+        FamilyIDNotExist=141,
+        /// <summary>家庭內有教友存在，不可刪除</summary>
+        [DataType("家庭內有教友存在，不可刪除")]
+        FamilyHasMembers=142,
         /// <summary>系統不明錯誤</summary>
         [DataType("系統不明錯誤")]
         SystemError = 1001

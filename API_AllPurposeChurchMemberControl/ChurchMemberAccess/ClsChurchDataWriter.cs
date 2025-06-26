@@ -1,4 +1,5 @@
 ﻿using API_AllPurposeChurchMemberControl.SQLiteDB.Entity;
+using DAL_AllPurposeChurchMemberControl.ChurchMembers.Family;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Members;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Users;
 using DAL_AllPurposeChurchMemberControl.ChurchSystem;
@@ -148,6 +149,80 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
             }
             return [.. datas];
         }
+        #region 家庭資料管理模組 (Family Data Management Module)
+        /// <summary>新增家庭資料</summary>
+        /// <param name="families"></param>
+        public static void AddFamily(ClsFamilies families)
+        {
+            using ChurchMembersContext db = new();
+            db.families.Add(new families
+            {
+                family_name = families.FamilyName,
+                address = families.FamilyAddress,
+                contact_phone = families.FamilyPhone
+            });
+            db.SaveChanges();
+        }
+        /// <summary>更新家庭資訊</summary>
+        /// <param name="families"></param>
+        /// <exception cref="ChurchMemberException"></exception>
+        public static void UpdateFamily(ClsFamilies families)
+        {
+            using ChurchMembersContext db = new();
+            families? f = db.families.Where(x => x.id == families.Id).FirstOrDefault();
+            if (f == null)
+            {
+                throw new ChurchMemberException(SystemReturnMessage.FamilyIDNotExist);
+            }
+            else
+            {
+                f.family_name = families.FamilyName;
+                f.address = families.FamilyAddress;
+                f.contact_phone = families.FamilyPhone;
+                db.SaveChanges();
+            }
+        }
+        /// <summary>依Id取得家庭資訊</summary>
+        /// <param name="FamilyId"></param>
+        /// <returns></returns>
+        public static ClsFamilies? GetFamilyById(int FamilyId)
+        {
+            return new ChurchMembersContext().families.Where(x => x.id == FamilyId)
+                .Select(x => new ClsFamilies
+                {
+                    Id = x.id,
+                    FamilyName = x.family_name ?? string.Empty,
+                    FamilyAddress = x.address ?? string.Empty,
+                    FamilyPhone = x.contact_phone ?? string.Empty
+                }).FirstOrDefault();
+        }
+        /// <summary>刪除家庭資料</summary>
+        /// <param name="FamilyId"></param>
+        /// <exception cref="ChurchMemberException"></exception>
+        public static void DeleteFamily(int FamilyId)
+        {
+            using ChurchMembersContext db = new();
+            families? f = db.families.Where(x => x.id == FamilyId).FirstOrDefault();
+            if (f == null)
+            {
+                throw new ChurchMemberException(SystemReturnMessage.FamilyIDNotExist);
+            }
+            if (db.members.Where(x => x.family_id == FamilyId).Any())
+            {
+                throw new ChurchMemberException(SystemReturnMessage.FamilyHasMembers);
+            }
+            db.families.Remove(f);
+            db.SaveChanges();
+        }
+        /// <summary>是否有教友屬於此編號的家庭</summary>
+        /// <param name=""></param>
+        /// <returns></returns>
+        internal static bool HasFamilyMembers(int FamilyId)
+        {
+            using ChurchMembersContext db = new();
+            return db.members.Where(x => x.family_id == FamilyId).Any();
+        }
+        #endregion
         #endregion
 
         #region 帳號與權限模組 (Account & Permission Module)
