@@ -4,7 +4,7 @@
     public class ClsMemberData
     {
         public int Id { get; set; }
-        public string Name { get; set; } = null!;
+        public string memberName { get; set; } = null!;
         public string Gender { get; set; } = string.Empty;
         /// <summary>出生年月日</summary>
         public DateTime? Birthdate { get; set; }

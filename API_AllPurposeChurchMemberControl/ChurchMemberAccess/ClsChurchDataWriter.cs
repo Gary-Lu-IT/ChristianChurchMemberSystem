@@ -17,7 +17,7 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
             using ChurchMembersContext db = new();
             db.members.Add(new members
             {
-                name = data.Name,
+                name = data.memberName,
                 gender = data.Gender,
                 birthdate = data.Birthdate,
                 phone = data.Phone,
@@ -42,7 +42,7 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
             }
             else
             {
-                m.name= data.Name;
+                m.name= data.memberName;
                 m.birthdate=data.Birthdate;
                 m.gender = data.Gender;
                 m.phone= data.Phone;
@@ -70,7 +70,7 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
                     Email = x.email ?? string.Empty,
                     Gender = x.gender ?? string.Empty,
                     GroupName = x.group_name ?? string.Empty,
-                    Name = x.name,
+                    memberName = x.name,
                     Notes = x.notes ?? string.Empty,
                     Phone = x.phone ?? string.Empty,
                     Address = x.address ?? string.Empty,
@@ -120,7 +120,7 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
                 Email = x.email ?? string.Empty,
                 Gender = x.gender ?? string.Empty,
                 GroupName = x.group_name ?? string.Empty,
-                Name = x.name,
+                memberName = x.name,
                 Notes = x.notes ?? string.Empty,
                 Phone = x.phone ?? string.Empty,
                 Address = x.address ?? string.Empty,
@@ -131,7 +131,7 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
             {
                 if (!string.IsNullOrWhiteSpace(param.NameKeyword))
                 {
-                    datas=datas.Where(x=>x.Name.Contains(param.NameKeyword));
+                    datas=datas.Where(x=>x.memberName.Contains(param.NameKeyword));
                 }
                 if (!string.IsNullOrWhiteSpace(param.PhoneKeyword))
                 {

@@ -17,7 +17,7 @@ namespace Form式泛用基督教會會員管理系統.SubForms.Member
             DgvMemberView.Rows.Clear();
             foreach (var md in ClsChurchDataSaver.GetMemberList())
             {
-                DgvMemberView.Rows.Add(md.Id, md.Name, md.Baptized ? "是" : "否", md.StoppedTime == null ? "否" : "已停用");
+                DgvMemberView.Rows.Add(md.Id, md.memberName, md.Baptized ? "是" : "否", md.StoppedTime == null ? "否" : "已停用");
             }
         }
         #endregion

@@ -20,7 +20,7 @@ namespace Form式泛用基督教會會員管理系統.SubForms.Member
                 }
                 else
                 {
-                    TxtName.Text = TargetMemberData.Name;
+                    TxtName.Text = TargetMemberData.memberName;
                     if (TargetMemberData.Birthdate != null)
                     {
                         DtpBirthday.Value = TargetMemberData.Birthdate.Value;
@@ -59,7 +59,7 @@ namespace Form式泛用基督教會會員管理系統.SubForms.Member
                     //新增模式
                     ClsChurchDataSaver.AddMember(new ClsMemberData
                     {
-                        Name = TxtName.Text,
+                        memberName = TxtName.Text,
                         Gender = RdoMan.Checked ? "男" : "女",
                         Birthdate = DtpBirthday.Value,
                         Phone = TxtPhone.Text,
@@ -79,7 +79,7 @@ namespace Form式泛用基督教會會員管理系統.SubForms.Member
                     ClsChurchDataSaver.UpdateMember(new ClsMemberData
                     {
                         Id=TargetMemberData.Id,
-                        Name = TxtName.Text,
+                        memberName = TxtName.Text,
                         Gender = RdoMan.Checked ? "男" : "女",
                         Birthdate = DtpBirthday.Value,
                         Phone = TxtPhone.Text,

@@ -1,23 +1,49 @@
 [
   {
-    "ContainingType": "WEBAPI_ChristianChurchMemberSystem.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
+    "ContainingType": "WEBAPI_ChristianChurchMemberSystem.Controllers.MemberController",
+    "Method": "AddMember",
+    "RelativePath": "Member/AddMember",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[WEBAPI_ChristianChurchMemberSystem.WeatherForecast, WEBAPI_ChristianChurchMemberSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "data",
+        "Type": "DAL_AllPurposeChurchMemberControl.ChurchMembers.Members.ClsMemberData",
+        "IsRequired": true
       }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WEBAPI_ChristianChurchMemberSystem.Controllers.MemberController",
+    "Method": "GetMemberList",
+    "RelativePath": "Member/GetMemberList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NameKeyword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneKeyword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "GroupName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsBaptized",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

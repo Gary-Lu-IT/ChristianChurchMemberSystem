@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>WEBAPI_ChristianChurchMemberSystem</RootNamespace>
     <AssemblyName>WEBAPI_ChristianChurchMemberSystem</AssemblyName>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,6 +14,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="9.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="9.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\API_AllPurposeChurchMemberControl\泛用基督教會會員管理系統API.csproj" />
+    <ProjectReference Include="..\DAL_AllPurposeChurchMemberControl\泛用基督教會會員管理系統DAL.csproj" />
   </ItemGroup>
 
 </Project>

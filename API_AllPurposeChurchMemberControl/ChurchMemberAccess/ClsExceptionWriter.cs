@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
 {
     /// <summary>例外狀況事件紀錄器</summary>
-    internal class ClsExceptionWriter
+    public class ClsExceptionWriter
     {
         /// <summary>記錄錯誤訊息</summary>
         /// <param name="message">文字錯誤訊息</param>
