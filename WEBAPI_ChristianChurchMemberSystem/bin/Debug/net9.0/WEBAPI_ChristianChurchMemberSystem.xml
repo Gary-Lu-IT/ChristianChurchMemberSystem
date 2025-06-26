@@ -17,6 +17,16 @@
             <param name="data"></param>
             <returns></returns>
         </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.MemberController.GetMemberById(DAL_AllPurposeChurchMemberControl.ChurchMembers.Members.ClsMemberIdPack)">
+            <summary>取得單一會員資料：根據會員 ID 查詢單一會員的詳細資料。</summary>
+            <param name="memberIdPack"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.MemberController.DeleteMember(DAL_AllPurposeChurchMemberControl.ChurchMembers.Members.ClsMemberIdPack)">
+            <summary>刪除會員：從系統中移除一個會員資料</summary>
+            <param name="memberIdPack"></param>
+            <returns></returns>
+        </member>
         <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.MemberController.GetMemberList(DAL_AllPurposeChurchMemberControl.ChurchMembers.Members.ClsMemberQueryParam)">
             <summary>取得會員清單：查詢所有會員或根據條件篩選會員清單。</summary>
             <param name="param"></param>

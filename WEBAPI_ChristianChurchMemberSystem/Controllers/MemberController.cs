@@ -62,6 +62,61 @@ namespace WEBAPI_ChristianChurchMemberSystem.Controllers
                 return StatusCode(500);
             }
         }
+        /// <summary>取得單一會員資料：根據會員 ID 查詢單一會員的詳細資料。</summary>
+        /// <param name="memberIdPack"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [AllowAnonymous]
+        [Route("[action]")]
+        public IActionResult GetMemberById([FromBody] ClsMemberIdPack memberIdPack)
+        {
+            try
+            {
+                var memberData = ClsChurchDataSaver.GetMemberById(memberIdPack.Id);
+                if (memberData == null)
+                {
+                    return NotFound(SystemReturnMessage.MemberIDNotExist);
+                }
+                return Ok(memberData);
+            }
+            catch (ChurchMemberException ex)
+            {
+                ClsExceptionWriter.WriteError(ex.Message);
+                // 這裡可以加入日誌記錄或其他錯誤處理
+                return Ok(ex.ErrorCode);
+            }
+            catch (Exception ex)
+            {
+                ClsExceptionWriter.WriteError(ref ex);
+                // 這裡可以加入日誌記錄或其他錯誤處理
+                return StatusCode(500);
+            }
+        }
+        /// <summary>刪除會員：從系統中移除一個會員資料</summary>
+        /// <param name="memberIdPack"></param>
+        /// <returns></returns>
+        [HttpPost]
+        [AllowAnonymous]
+        [Route("[action]")]public IActionResult DeleteMember([FromBody] ClsMemberIdPack memberIdPack)
+        {
+            try
+            {
+                ClsChurchDataSaver.DeleteMember(memberIdPack.Id);
+                return Ok(SystemReturnMessage.Success);
+            }
+            catch (ChurchMemberException ex)
+            {
+                ClsExceptionWriter.WriteError(ex.Message);
+                // 這裡可以加入日誌記錄或其他錯誤處理
+                return Ok(ex.ErrorCode);
+            }
+            catch (Exception ex)
+            {
+                ClsExceptionWriter.WriteError(ref ex);
+                // 這裡可以加入日誌記錄或其他錯誤處理
+                return StatusCode(500);
+            }
+        }
         /// <summary>取得會員清單：查詢所有會員或根據條件篩選會員清單。</summary>
         /// <param name="param"></param>
         /// <returns></returns>
