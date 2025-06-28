@@ -41,7 +41,7 @@
             // 
             // BtnAdd
             // 
-            BtnAdd.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            BtnAdd.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnAdd.Location = new Point(677, 12);
             BtnAdd.Name = "BtnAdd";
             BtnAdd.Size = new Size(94, 49);
@@ -52,7 +52,7 @@
             // 
             // BtnEdit
             // 
-            BtnEdit.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            BtnEdit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnEdit.Location = new Point(677, 67);
             BtnEdit.Name = "BtnEdit";
             BtnEdit.Size = new Size(94, 49);
@@ -63,7 +63,7 @@
             // 
             // BtnDelete
             // 
-            BtnDelete.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            BtnDelete.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BtnDelete.Location = new Point(677, 122);
             BtnDelete.Name = "BtnDelete";
             BtnDelete.Size = new Size(94, 49);

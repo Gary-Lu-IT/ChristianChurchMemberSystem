@@ -11,9 +11,13 @@ namespace Form式泛用基督教會會員管理系統.SubForms.Member
         public FrmMemberEditor(int? GetMemberId = null)
         {
             InitializeComponent();
+            Text = GetMemberId == null ? "新增教友資料" : "編輯教友資料";
             if (GetMemberId != null)
             {
                 TargetMemberData = ClsChurchDataSaver.GetMemberById(GetMemberId.Value);
+                //如果找不到教友資料，則會進入新增模式
+                Text= TargetMemberData == null ? "新增教友資料" : "編輯教友資料";
+                //資料載入其他元件
                 if (TargetMemberData == null)
                 {
                     MessageBox.Show("教友資料不存在無法編輯！將進入新增教友資料模式。", "編輯教友資料", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);

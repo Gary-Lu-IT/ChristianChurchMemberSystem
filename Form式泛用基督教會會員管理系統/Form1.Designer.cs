@@ -34,6 +34,7 @@
             TsmiLogin = new ToolStripMenuItem();
             教友MToolStripMenuItem = new ToolStripMenuItem();
             TsmiMemberList = new ToolStripMenuItem();
+            TsmiFamilyList = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
             TsslTime = new ToolStripStatusLabel();
             TmrTime = new System.Windows.Forms.Timer(components);
@@ -67,17 +68,24 @@
             // 
             // 教友MToolStripMenuItem
             // 
-            教友MToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TsmiMemberList });
+            教友MToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TsmiMemberList, TsmiFamilyList });
             教友MToolStripMenuItem.Name = "教友MToolStripMenuItem";
-            教友MToolStripMenuItem.Size = new Size(77, 24);
-            教友MToolStripMenuItem.Text = "教友(&M)";
+            教友MToolStripMenuItem.Size = new Size(107, 24);
+            教友MToolStripMenuItem.Text = "教友管理(&M)";
             // 
             // TsmiMemberList
             // 
             TsmiMemberList.Name = "TsmiMemberList";
             TsmiMemberList.Size = new Size(224, 26);
-            TsmiMemberList.Text = "資料列表(&L)";
+            TsmiMemberList.Text = "教友資料列表(&L)";
             TsmiMemberList.Click += TsmiMemberList_Click;
+            // 
+            // TsmiFamilyList
+            // 
+            TsmiFamilyList.Name = "TsmiFamilyList";
+            TsmiFamilyList.Size = new Size(224, 26);
+            TsmiFamilyList.Text = "家庭資料列表(&F)";
+            TsmiFamilyList.Click += TsmiFamilyList_Click;
             // 
             // statusStrip1
             // 
@@ -128,5 +136,6 @@
         private ToolStripMenuItem TsmiLogin;
         private ToolStripMenuItem 教友MToolStripMenuItem;
         private ToolStripMenuItem TsmiMemberList;
+        private ToolStripMenuItem TsmiFamilyList;
     }
 }
