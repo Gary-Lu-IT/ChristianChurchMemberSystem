@@ -1,5 +1,4 @@
 ﻿using API_AllPurposeChurchMemberControl.ChurchMemberAccess;
-using Form式泛用基督教會會員管理系統.SubForms.Member;
 
 namespace Form式泛用基督教會會員管理系統.SubForms.Family
 {
