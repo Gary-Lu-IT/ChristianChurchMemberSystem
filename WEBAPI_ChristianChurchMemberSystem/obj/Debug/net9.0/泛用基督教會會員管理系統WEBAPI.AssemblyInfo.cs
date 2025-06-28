@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WEBAPI_ChristianChurchMemberSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c771a113d05d807445bbfd14bb07ed2f908f15af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19689bdbac6a40f3700763ac1b1c805a4488b805")]
 [assembly: System.Reflection.AssemblyProductAttribute("WEBAPI_ChristianChurchMemberSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WEBAPI_ChristianChurchMemberSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

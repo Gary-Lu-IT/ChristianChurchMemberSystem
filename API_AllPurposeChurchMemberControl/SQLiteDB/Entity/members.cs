@@ -39,5 +39,7 @@ public partial class members
 
     public virtual ICollection<offerings> offerings { get; set; } = new List<offerings>();
 
+    public virtual ICollection<prayer_requests> prayer_requests { get; set; } = new List<prayer_requests>();
+
     public virtual ICollection<users> users { get; set; } = new List<users>();
 }

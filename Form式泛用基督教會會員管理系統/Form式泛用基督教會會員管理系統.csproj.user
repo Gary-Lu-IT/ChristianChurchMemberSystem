@@ -7,6 +7,9 @@
     <Compile Update="SubForms\Account\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="SubForms\ChurchSystem\FrmIdSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="SubForms\Family\FrmFamilyEditor.cs">
       <SubType>Form</SubType>
     </Compile>

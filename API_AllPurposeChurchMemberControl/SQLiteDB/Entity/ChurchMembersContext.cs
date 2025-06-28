@@ -31,6 +31,8 @@ public partial class ChurchMembersContext : DbContext
 
     public virtual DbSet<offerings> offerings { get; set; }
 
+    public virtual DbSet<prayer_requests> prayer_requests { get; set; }
+
     public virtual DbSet<users> users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -103,6 +105,17 @@ public partial class ChurchMembersContext : DbContext
             entity.Property(e => e.offer_date).HasColumnType("DATE");
 
             entity.HasOne(d => d.member).WithMany(p => p.offerings).HasForeignKey(d => d.member_id);
+        });
+
+        modelBuilder.Entity<prayer_requests>(entity =>
+        {
+            entity.Property(e => e.create_date).HasColumnType("datetime");
+            entity.Property(e => e.modify_date).HasColumnType("datetime");
+            entity.Property(e => e.stop_date).HasColumnType("datetime");
+
+            entity.HasOne(d => d.member).WithMany(p => p.prayer_requests)
+                .HasForeignKey(d => d.member_id)
+                .OnDelete(DeleteBehavior.ClientSetNull);
         });
 
         modelBuilder.Entity<users>(entity =>
