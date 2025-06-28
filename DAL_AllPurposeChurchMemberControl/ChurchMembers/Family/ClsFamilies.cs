@@ -16,4 +16,10 @@ namespace DAL_AllPurposeChurchMemberControl.ChurchMembers.Family
         /// <summary>電話號碼</summary>
         public string FamilyPhone { get; set; } = string.Empty;
     }
+    /// <summary>家庭資料查詢</summary>
+    public class ClsFamilyQueryParam
+    {
+        /// <summary>名稱</summary>
+        public string FamilyName { get; set; } = string.Empty;
+    }
 }

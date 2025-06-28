@@ -222,6 +222,23 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
             using ChurchMembersContext db = new();
             return db.members.Where(x => x.family_id == FamilyId).Any();
         }
+        /// <summary>查詢所有家庭或根據條件篩選家庭清單。</summary>
+        public static IList<ClsFamilies> GetFamilyList(ClsFamilyQueryParam? param = null)
+        {
+            using ChurchMembersContext db = new();
+            IQueryable<ClsFamilies> datas = db.families.Select(x => new ClsFamilies
+            {
+                Id = x.id,
+                FamilyName = x.family_name ?? string.Empty,
+                FamilyAddress = x.address ?? string.Empty,
+                FamilyPhone = x.contact_phone ?? string.Empty
+            });
+            if(param!=null && !string.IsNullOrWhiteSpace(param.FamilyName))
+            {
+                datas = datas.Where(x => x.FamilyName.Contains(param.FamilyName));
+            }
+            return [.. datas];
+        }
         #endregion
         #endregion
 

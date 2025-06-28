@@ -358,6 +358,13 @@ public class MemberQueryDto
             }
             ClsChurchDataWriter.DeleteFamily(FamilyId);
         }
+        /// <summary>查詢家庭資料</summary>
+        /// <param name="param"></param>
+        /// <returns></returns>
+        public static IList<ClsFamilies> GetFamilyList(ClsFamilyQueryParam? param = null)
+        {
+            return ClsChurchDataWriter.GetFamilyList(param);
+        }
         #endregion
         #endregion
 
