@@ -1,12 +1,17 @@
 # ChristianChurchMemberSystem 
 # 基督教會會員管理系統 - 核心功能清單（通用共通功能）
-***
+
 ## [專案組成結構]
-**犬塚日葵小姐(563SH)**
-- Form式泛用基督教會會員管理系統 (Windows視窗EXE應用程式)
-- 泛用基督教會會員管理系統API (DLL)
-- 泛用基督教會會員管理系統DAL (DLL)
-- 泛用基督教會會員管理系統WEBAPI (支援Swagger介面的WEBAPI)
+以下使用Visual Studio 2022 Community開啟編譯
+| SLN檔或CSPROJ檔名 | 作用 |
+| ----------------  | ---- |
+| **犬塚日葵小姐(563SH)**|SLN(主方案檔)|
+| Form式泛用基督教會會員管理系統|CSPROJ檔 (Windows視窗EXE應用程式)|
+| 泛用基督教會會員管理系統API|CSPROJ檔 (DLL)|
+| 泛用基督教會會員管理系統DAL|CSPROJ檔 (DLL)|
+| 泛用基督教會會員管理系統WEBAPI|CSPROJ檔 (支援Swagger介面的WEBAPI)|
+
+AngularChristianChurchMemberSystem為獨立Angular專案，使用Visual Studio Code處理
 ***
 **系統介紹**
 - 開發能夠簡單部署、容易上手、簡潔明瞭、不管哪間教會都可以使用的會員管理系統。
