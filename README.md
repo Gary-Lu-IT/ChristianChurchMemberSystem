@@ -11,7 +11,7 @@
 | 泛用基督教會會員管理系統DAL|CSPROJ檔 (DLL)|
 | 泛用基督教會會員管理系統WEBAPI|CSPROJ檔 (支援Swagger介面的WEBAPI)|
 
-AngularChristianChurchMemberSystem為獨立Angular專案，使用Visual Studio Code處理
+PythonWebChristianChurchMemberSystem為獨立Python Django專案，使用Visual Studio Code處理
 ***
 **系統介紹**
 - 開發能夠簡單部署、容易上手、簡潔明瞭、不管哪間教會都可以使用的會員管理系統。
