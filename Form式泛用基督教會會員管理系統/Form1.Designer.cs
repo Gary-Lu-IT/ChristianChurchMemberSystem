@@ -35,12 +35,12 @@
             教友MToolStripMenuItem = new ToolStripMenuItem();
             TsmiMemberList = new ToolStripMenuItem();
             TsmiFamilyList = new ToolStripMenuItem();
-            statusStrip1 = new StatusStrip();
-            TsslTime = new ToolStripStatusLabel();
-            TmrTime = new System.Windows.Forms.Timer(components);
             TsmiPrayerRequests = new ToolStripMenuItem();
             系統SToolStripMenuItem = new ToolStripMenuItem();
             TsmiAnnouncements = new ToolStripMenuItem();
+            statusStrip1 = new StatusStrip();
+            TsslTime = new ToolStripStatusLabel();
+            TmrTime = new System.Windows.Forms.Timer(components);
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
@@ -51,7 +51,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { 使用者帳號AToolStripMenuItem, 教友MToolStripMenuItem, 系統SToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 27);
+            menuStrip1.Size = new Size(800, 28);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -59,7 +59,7 @@
             // 
             使用者帳號AToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TsmiLogin });
             使用者帳號AToolStripMenuItem.Name = "使用者帳號AToolStripMenuItem";
-            使用者帳號AToolStripMenuItem.Size = new Size(118, 23);
+            使用者帳號AToolStripMenuItem.Size = new Size(118, 24);
             使用者帳號AToolStripMenuItem.Text = "使用者帳號(&A)";
             // 
             // TsmiLogin
@@ -73,22 +73,42 @@
             // 
             教友MToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TsmiMemberList, TsmiFamilyList, TsmiPrayerRequests });
             教友MToolStripMenuItem.Name = "教友MToolStripMenuItem";
-            教友MToolStripMenuItem.Size = new Size(107, 23);
+            教友MToolStripMenuItem.Size = new Size(107, 24);
             教友MToolStripMenuItem.Text = "教友管理(&M)";
             // 
             // TsmiMemberList
             // 
             TsmiMemberList.Name = "TsmiMemberList";
-            TsmiMemberList.Size = new Size(224, 26);
+            TsmiMemberList.Size = new Size(201, 26);
             TsmiMemberList.Text = "教友資料列表(&L)";
             TsmiMemberList.Click += TsmiMemberList_Click;
             // 
             // TsmiFamilyList
             // 
             TsmiFamilyList.Name = "TsmiFamilyList";
-            TsmiFamilyList.Size = new Size(224, 26);
+            TsmiFamilyList.Size = new Size(201, 26);
             TsmiFamilyList.Text = "家庭資料列表(&F)";
             TsmiFamilyList.Click += TsmiFamilyList_Click;
+            // 
+            // TsmiPrayerRequests
+            // 
+            TsmiPrayerRequests.Name = "TsmiPrayerRequests";
+            TsmiPrayerRequests.Size = new Size(201, 26);
+            TsmiPrayerRequests.Text = "代禱事項列表(&P)";
+            // 
+            // 系統SToolStripMenuItem
+            // 
+            系統SToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TsmiAnnouncements });
+            系統SToolStripMenuItem.Name = "系統SToolStripMenuItem";
+            系統SToolStripMenuItem.Size = new Size(72, 24);
+            系統SToolStripMenuItem.Text = "系統(&S)";
+            // 
+            // TsmiAnnouncements
+            // 
+            TsmiAnnouncements.Name = "TsmiAnnouncements";
+            TsmiAnnouncements.Size = new Size(224, 26);
+            TsmiAnnouncements.Text = "公告列表(&A)";
+            TsmiAnnouncements.Click += TsmiAnnouncements_Click;
             // 
             // statusStrip1
             // 
@@ -109,25 +129,6 @@
             // TmrTime
             // 
             TmrTime.Tick += TickToShowCurrentTime;
-            // 
-            // TsmiPrayerRequests
-            // 
-            TsmiPrayerRequests.Name = "TsmiPrayerRequests";
-            TsmiPrayerRequests.Size = new Size(224, 26);
-            TsmiPrayerRequests.Text = "代禱事項列表(&P)";
-            // 
-            // 系統SToolStripMenuItem
-            // 
-            系統SToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TsmiAnnouncements });
-            系統SToolStripMenuItem.Name = "系統SToolStripMenuItem";
-            系統SToolStripMenuItem.Size = new Size(72, 23);
-            系統SToolStripMenuItem.Text = "系統(&S)";
-            // 
-            // TsmiAnnouncements
-            // 
-            TsmiAnnouncements.Name = "TsmiAnnouncements";
-            TsmiAnnouncements.Size = new Size(224, 26);
-            TsmiAnnouncements.Text = "公告列表(&A)";
             // 
             // Form1
             // 

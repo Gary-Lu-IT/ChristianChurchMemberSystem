@@ -7,11 +7,17 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyName>Form_AllPurposeChurchMemberControl</AssemblyName>
+    <Version>0.0.3</Version>
+    <Authors>Gary Lu(Sakuramori Akane 111A)</Authors>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\API_AllPurposeChurchMemberControl\泛用基督教會會員管理系統通用API.csproj" />
     <ProjectReference Include="..\DAL_AllPurposeChurchMemberControl\泛用基督教會會員管理系統DAL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="SubForms\ChurchSystem\" />
   </ItemGroup>
 
 </Project>

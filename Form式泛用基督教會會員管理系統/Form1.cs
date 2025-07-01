@@ -1,4 +1,5 @@
 using Form式泛用基督教會會員管理系統.SubForms.Account;
+using Form式泛用基督教會會員管理系統.SubForms.Announcement;
 using Form式泛用基督教會會員管理系統.SubForms.Family;
 using Form式泛用基督教會會員管理系統.SubForms.Member;
 
@@ -59,7 +60,7 @@ namespace Form式泛用基督教會會員管理系統
             bool FormFound = false;
             foreach (Form F in this.MdiChildren)
             {
-                if (F.Name == "FrmFamilyList")
+                if (F.Name == "FrmFamilyView")
                 {
                     F.WindowState = FormWindowState.Maximized;
                     FormFound = true;
@@ -70,6 +71,27 @@ namespace Form式泛用基督教會會員管理系統
                 FrmFamilyView MV = new();
                 MV.MdiParent = this;
                 MV.Show();
+            }
+        }
+        /// <summary>系統公告列表</summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TsmiAnnouncements_Click(object sender, EventArgs e)
+        {
+            bool FormFound = false;
+            foreach (Form F in this.MdiChildren)
+            {
+                if (F.Name == "FrmAnnouncementView")
+                {
+                    F.WindowState = FormWindowState.Maximized;
+                    FormFound = true;
+                }
+            }
+            if (!FormFound)
+            {
+                FrmAnnouncementView AV = new();
+                AV.MdiParent = this;
+                AV.Show();
             }
         }
     }

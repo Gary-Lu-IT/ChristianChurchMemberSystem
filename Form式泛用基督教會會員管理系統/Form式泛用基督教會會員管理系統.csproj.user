@@ -13,9 +13,6 @@
     <Compile Update="SubForms\Announcement\FrmAnnouncementView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="SubForms\ChurchSystem\FrmIdSelector.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="SubForms\Family\FrmFamilyEditor.cs">
       <SubType>Form</SubType>
     </Compile>
