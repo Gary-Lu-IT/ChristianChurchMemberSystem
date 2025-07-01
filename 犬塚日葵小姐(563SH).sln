@@ -5,7 +5,7 @@ VisualStudioVersion = 17.14.36203.30
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "泛用基督教會會員管理系統DAL", "DAL_AllPurposeChurchMemberControl\泛用基督教會會員管理系統DAL.csproj", "{B03F2383-28AD-99F8-A168-090A63A0870D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "泛用基督教會會員管理系統API", "API_AllPurposeChurchMemberControl\泛用基督教會會員管理系統API.csproj", "{7B9505AD-4B2C-3B38-53E1-0052ECA9DEC7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "泛用基督教會會員管理系統通用API", "API_AllPurposeChurchMemberControl\泛用基督教會會員管理系統通用API.csproj", "{7B9505AD-4B2C-3B38-53E1-0052ECA9DEC7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Form式泛用基督教會會員管理系統", "Form式泛用基督教會會員管理系統\Form式泛用基督教會會員管理系統.csproj", "{70F13CC1-1104-4122-9F86-DF4E4770A13B}"
 EndProject

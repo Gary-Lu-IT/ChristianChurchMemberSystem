@@ -4,12 +4,12 @@
     "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Form式泛用基督教會會員管理系統\\Form式泛用基督教會會員管理系統.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統API.csproj": {
+    "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統通用API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統API.csproj",
+        "projectUniqueName": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統通用API.csproj",
         "projectName": "API_AllPurposeChurchMemberControl",
-        "projectPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統API.csproj",
+        "projectPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統通用API.csproj",
         "packagesPath": "C:\\Users\\GARY LU\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\obj\\",
         "projectStyle": "PackageReference",
@@ -181,8 +181,8 @@
           "net9.0-windows7.0": {
             "targetAlias": "net9.0-windows",
             "projectReferences": {
-              "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統API.csproj": {
-                "projectPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統API.csproj"
+              "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統通用API.csproj": {
+                "projectPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統通用API.csproj"
               },
               "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\DAL_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統DAL.csproj": {
                 "projectPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\DAL_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統DAL.csproj"

@@ -1,6 +1,6 @@
 ﻿using DAL_AllPurposeChurchMemberControl.ChurchMembers.Members;
 
-namespace DAL_AllPurposeChurchMemberControl.ChurchMembers.Family
+namespace DAL_AllPurposeChurchMemberControl.ChurchMembers.Families
 {
     public class ClsFamilyIdPack:ClsIdPackBase
     {

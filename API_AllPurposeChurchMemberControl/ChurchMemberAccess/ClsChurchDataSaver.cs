@@ -1,4 +1,6 @@
-﻿using DAL_AllPurposeChurchMemberControl.ChurchMembers.Family;
+﻿using API_AllPurposeChurchMemberControl.SQLiteDB.Entity;
+using DAL_AllPurposeChurchMemberControl.ChurchMembers.Announcements;
+using DAL_AllPurposeChurchMemberControl.ChurchMembers.Families;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Members;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Users;
 using DAL_AllPurposeChurchMemberControl.ChurchSystem;
@@ -159,33 +161,6 @@ C# 方法簽名：
 功能：匯出活動的報名人員或出席人員名單。
 ◦
 C# 方法簽名：
-六、公告通知模組 (Announcement Module) 此模組負責發布和管理系統公告。
-•
-資料表：announcements。
-1.
-發布公告 (PublishAnnouncement)
-◦
-功能：管理員發布系統公告。
-◦
-C# 方法簽名：
-2.
-更新公告 (UpdateAnnouncement)
-◦
-功能：修改現有公告的內容。
-◦
-C# 方法簽名：
-3.
-刪除公告 (DeleteAnnouncement)
-◦
-功能：移除一個公告。
-◦
-C# 方法簽名：
-4.
-取得公告列表 (GetAnnouncements)
-◦
-功能：查詢系統公告列表。
-◦
-C# 方法簽名：
 七、查詢與統計報表模組 (Query & Report Module) 此模組提供多條件查詢和匯出各類報表的功能。
 •
 資料表：跨多個資料表查詢。
@@ -279,7 +254,7 @@ public class MemberQueryDto
 }
 這些功能與參數設計是基於您提供的系統文件和資料庫架構進行的初步建議。在實際開發中，還需考慮錯誤處理、日誌記錄、非同步操作 (async/await)、資料驗證、以及更細緻的權限控制邏輯等。
          */
-        #region 會員資料管理模組 (Member Data Management Module)
+        #region 一、會員資料管理模組 (Member Data Management Module)
         /// <summary>新增會員資料：新增一個會員的基本資料。</summary>
         /// <param name="data"></param>
         public static void AddMember(ClsMemberData data)
@@ -368,7 +343,7 @@ public class MemberQueryDto
         #endregion
         #endregion
 
-        #region 帳號與權限模組 (Account & Permission Module)
+        #region 二、帳號與權限模組 (Account & Permission Module)
         /// <summary>使用者登入：驗證使用者帳號密碼，並記錄登入日誌。</summary>
         /// <param name="param"></param>
         /// <returns></returns>
@@ -379,6 +354,52 @@ public class MemberQueryDto
                 throw new ChurchMemberException(SystemReturnMessage.EmptyIDOrPassword);
             }
             return ClsChurchDataWriter.UserLogin(param);
+        }
+        #endregion
+
+        #region 六、公告通知模組 (Announcement Module) 此模組負責發布和管理系統公告
+        /// <summary>發布公告：管理員發布系統公告。</summary>
+        /// <param name="data"></param>
+        public static void PublishAnnouncement(ClsAnnouncementData data)
+        {
+            ClsChurchDataWriter.PublishAnnouncement(data);
+        }
+        /// <summary>更新公告：修改現有公告的內容。</summary>
+        /// <param name="data"></param>
+        /// <exception cref="ChurchMemberException"></exception>
+        public static void UpdateAnnouncement(ClsAnnouncementData data)
+        {
+            ClsAnnouncementData? ad = ClsChurchDataWriter.GetAnnouncementById(data.Id);
+            if (ad == null)
+            {
+                throw new ChurchMemberException(SystemReturnMessage.AnnouncementIDNotExist);
+            }
+            ClsChurchDataWriter.UpdateAnnouncement(data);
+        }
+        /// <summary>刪除公告：移除一個公告。</summary>
+        /// <param name="AnnouncementId"></param>
+        /// <exception cref="ChurchMemberException"></exception>
+        public static void DeleteAnnouncement(int AnnouncementId)
+        {
+            ClsAnnouncementData? ad = ClsChurchDataWriter.GetAnnouncementById(AnnouncementId);
+            if(ad == null)
+            {
+                throw new ChurchMemberException(SystemReturnMessage.AnnouncementIDNotExist);
+            }
+            ClsChurchDataWriter.DeleteAnnouncement(AnnouncementId);
+        }
+        /// <summary>取得單筆系統公告。</summary>
+        /// <param name="AnnouncementId"></param>
+        /// <returns></returns>
+        public static ClsAnnouncementData? GetAnnouncementById(int AnnouncementId)
+        {
+            return ClsChurchDataWriter.GetAnnouncementById(AnnouncementId);
+        }
+        /// <summary>取得公告列表：查詢系統公告列表。</summary>
+        /// <returns></returns>
+        public static IList<ClsAnnouncementData> GetAnnouncements()
+        {
+            return ClsChurchDataWriter.GetAnnouncements();
         }
         #endregion
 

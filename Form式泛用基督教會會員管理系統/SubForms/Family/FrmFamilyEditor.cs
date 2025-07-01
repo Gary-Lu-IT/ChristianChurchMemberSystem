@@ -1,5 +1,5 @@
 ﻿using API_AllPurposeChurchMemberControl.ChurchMemberAccess;
-using DAL_AllPurposeChurchMemberControl.ChurchMembers.Family;
+using DAL_AllPurposeChurchMemberControl.ChurchMembers.Families;
 using DAL_AllPurposeChurchMemberControl.ChurchSystem;
 
 namespace Form式泛用基督教會會員管理系統.SubForms.Family

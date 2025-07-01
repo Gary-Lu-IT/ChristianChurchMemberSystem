@@ -3132,9 +3132,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統API.csproj",
+      "projectUniqueName": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統通用API.csproj",
       "projectName": "API_AllPurposeChurchMemberControl",
-      "projectPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統API.csproj",
+      "projectPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統通用API.csproj",
       "packagesPath": "C:\\Users\\GARY LU\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\obj\\",
       "projectStyle": "PackageReference",

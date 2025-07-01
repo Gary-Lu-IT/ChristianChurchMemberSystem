@@ -7,19 +7,19 @@
         <member name="T:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController">
             <summary>家庭資料管理模組</summary>
         </member>
-        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController.AddFamily(DAL_AllPurposeChurchMemberControl.ChurchMembers.Family.ClsFamilies)">
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController.AddFamily(DAL_AllPurposeChurchMemberControl.ChurchMembers.Families.ClsFamilies)">
             <summary>新增家庭資料：新增一個家庭的基本資料。</summary>
         </member>
-        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController.UpdateFamily(DAL_AllPurposeChurchMemberControl.ChurchMembers.Family.ClsFamilies)">
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController.UpdateFamily(DAL_AllPurposeChurchMemberControl.ChurchMembers.Families.ClsFamilies)">
             <summary>更新家庭資料：修改現有家庭的各項基本資料。</summary>
         </member>
-        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController.DeleteFamily(DAL_AllPurposeChurchMemberControl.ChurchMembers.Family.ClsFamilyIdPack)">
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController.DeleteFamily(DAL_AllPurposeChurchMemberControl.ChurchMembers.Families.ClsFamilyIdPack)">
             <summary>刪除家庭資料：刪除指定的家庭資料。</summary>
         </member>
-        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController.GetFamilyList(DAL_AllPurposeChurchMemberControl.ChurchMembers.Family.ClsFamilyQueryParam)">
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController.GetFamilyList(DAL_AllPurposeChurchMemberControl.ChurchMembers.Families.ClsFamilyQueryParam)">
             <summary>查詢家庭資料：根據條件查詢家庭資料。</summary>
         </member>
-        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController.GetFamilyById(DAL_AllPurposeChurchMemberControl.ChurchMembers.Family.ClsFamilyIdPack)">
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController.GetFamilyById(DAL_AllPurposeChurchMemberControl.ChurchMembers.Families.ClsFamilyIdPack)">
             <summary>取得指定編號家庭資料</summary>
         </member>
         <member name="T:WEBAPI_ChristianChurchMemberSystem.Controllers.MemberController">

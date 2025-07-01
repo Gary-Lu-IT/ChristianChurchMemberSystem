@@ -39,6 +39,9 @@ namespace DAL_AllPurposeChurchMemberControl.ChurchSystem
         /// <summary>家庭內有教友存在，不可刪除</summary>
         [DataType("家庭內有教友存在，不可刪除")]
         FamilyHasMembers=142,
+        /// <summary>公告ID不存在</summary>
+        [DataType("公告ID不存在")]
+        AnnouncementIDNotExist =161,
         /// <summary>系統不明錯誤</summary>
         [DataType("系統不明錯誤")]
         SystemError = 1001
@@ -49,11 +52,11 @@ namespace DAL_AllPurposeChurchMemberControl.ChurchSystem
     {
         public static string GetDescription(this Enum value)
         {
-            FieldInfo field = value.GetType().GetField(value.ToString());
+            FieldInfo? field = value.GetType().GetField(value.ToString());
             if (field != null)
             {
-                DataTypeAttribute attribute =
-                    (DataTypeAttribute)Attribute.GetCustomAttribute(field, typeof(DataTypeAttribute));
+                DataTypeAttribute? attribute =
+                    (DataTypeAttribute?)Attribute.GetCustomAttribute(field, typeof(DataTypeAttribute));
 
                 if (attribute != null)
                 {

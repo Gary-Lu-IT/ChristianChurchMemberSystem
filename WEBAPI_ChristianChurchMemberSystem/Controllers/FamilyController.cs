@@ -1,5 +1,5 @@
 ﻿using API_AllPurposeChurchMemberControl.ChurchMemberAccess;
-using DAL_AllPurposeChurchMemberControl.ChurchMembers.Family;
+using DAL_AllPurposeChurchMemberControl.ChurchMembers.Families;
 using DAL_AllPurposeChurchMemberControl.ChurchSystem;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

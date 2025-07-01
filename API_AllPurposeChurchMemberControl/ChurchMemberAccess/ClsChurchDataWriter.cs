@@ -1,5 +1,6 @@
 ﻿using API_AllPurposeChurchMemberControl.SQLiteDB.Entity;
-using DAL_AllPurposeChurchMemberControl.ChurchMembers.Family;
+using DAL_AllPurposeChurchMemberControl.ChurchMembers.Announcements;
+using DAL_AllPurposeChurchMemberControl.ChurchMembers.Families;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Members;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Users;
 using DAL_AllPurposeChurchMemberControl.ChurchSystem;
@@ -10,7 +11,7 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
     /// <summary>基督教會會員資料寫入器(本類別專用)</summary>
     internal class ClsChurchDataWriter
     {
-        #region 會員資料管理模組 (Member Data Management Module)
+        #region 一、會員資料管理模組 (Member Data Management Module)
         /// <summary>新增一個會員的基本資料。</summary>
         /// <param name="data"></param>
         public static void AddMember(ClsMemberData data)
@@ -242,7 +243,7 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
         #endregion
         #endregion
 
-        #region 帳號與權限模組 (Account & Permission Module)
+        #region 二、帳號與權限模組 (Account & Permission Module)
         /// <summary>驗證使用者帳號密碼，並記錄登入日誌。</summary>
         /// <param name="param"></param>
         /// <returns></returns>
@@ -287,6 +288,82 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
                     Role = u.role
                 };
             }
+        }
+        #endregion
+
+        #region 六、公告通知模組 (Announcement Module) 此模組負責發布和管理系統公告
+        /// <summary>管理員發布系統公告。</summary>
+        /// <param name="data"></param>
+        public static void PublishAnnouncement(ClsAnnouncementData data)
+        {
+            using ChurchMembersContext db = new();
+            db.announcements.Add(new announcements
+            {
+                title = data.Title,
+                content = data.Content,
+                posted_at = DateTime.Now
+            });
+            db.SaveChanges();
+        }
+        /// <summary>修改現有公告的內容。</summary>
+        /// <param name="data"></param>
+        /// <exception cref="ChurchMemberException"></exception>
+        public static void UpdateAnnouncement(ClsAnnouncementData data)
+        {
+            using ChurchMembersContext db = new();
+            announcements? a = db.announcements.Where(x => x.id == data.Id).FirstOrDefault();
+            if (a == null)
+            {
+                throw new ChurchMemberException(SystemReturnMessage.AnnouncementIDNotExist);
+            }
+            else
+            {
+                a.title = data.Title;
+                a.content = data.Content;
+                a.posted_at = DateTime.Now;
+                db.SaveChanges();
+            }
+        }
+        /// <summary>移除一個公告。</summary>
+        /// <param name="AnnouncementId"></param>
+        /// <exception cref="ChurchMemberException"></exception>
+        public static void DeleteAnnouncement(int AnnouncementId)
+        {
+            using ChurchMembersContext db = new();
+            announcements? a = db.announcements.Where(x => x.id == AnnouncementId).FirstOrDefault();
+            if (a == null)
+            {
+                throw new ChurchMemberException(SystemReturnMessage.AnnouncementIDNotExist);
+            }
+            db.announcements.Remove(a);
+            db.SaveChanges();
+        }
+        /// <summary>取得單筆系統公告。</summary>
+        /// <param name="AnnouncementId"></param>
+        /// <returns></returns>
+        public static ClsAnnouncementData? GetAnnouncementById(int AnnouncementId)
+        {
+            using ChurchMembersContext db = new();
+            return db.announcements.Where(x => x.id == AnnouncementId).Select(x => new ClsAnnouncementData
+            {
+                Id = x.id,
+                Title = x.title ?? string.Empty,
+                Content = x.content ?? string.Empty,
+                PublishDateTime = x.posted_at
+            }).FirstOrDefault();
+        }
+        /// <summary>查詢系統公告列表。</summary>
+        /// <returns></returns>
+        public static IList<ClsAnnouncementData> GetAnnouncements()
+        {
+            using ChurchMembersContext db = new();
+            return db.announcements.Select(x => new ClsAnnouncementData
+            {
+                Id = x.id,
+                Title = x.title ?? string.Empty,
+                Content = x.content ?? string.Empty,
+                PublishDateTime = x.posted_at
+            }).ToList();
         }
         #endregion
 

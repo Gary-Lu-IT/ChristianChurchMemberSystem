@@ -1300,8 +1300,8 @@
     },
     "API_AllPurposeChurchMemberControl/1.0.0": {
       "type": "project",
-      "path": "../API_AllPurposeChurchMemberControl/泛用基督教會會員管理系統API.csproj",
-      "msbuildProject": "../API_AllPurposeChurchMemberControl/泛用基督教會會員管理系統API.csproj"
+      "path": "../API_AllPurposeChurchMemberControl/泛用基督教會會員管理系統通用API.csproj",
+      "msbuildProject": "../API_AllPurposeChurchMemberControl/泛用基督教會會員管理系統通用API.csproj"
     },
     "DAL_AllPurposeChurchMemberControl/1.0.0": {
       "type": "project",
@@ -1352,8 +1352,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統API.csproj": {
-              "projectPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統API.csproj"
+            "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統通用API.csproj": {
+              "projectPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統通用API.csproj"
             },
             "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\DAL_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統DAL.csproj": {
               "projectPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\DAL_AllPurposeChurchMemberControl\\泛用基督教會會員管理系統DAL.csproj"
