@@ -1,5 +1,4 @@
-﻿using API_AllPurposeChurchMemberControl.SQLiteDB.Entity;
-using DAL_AllPurposeChurchMemberControl.ChurchMembers.Announcements;
+﻿using DAL_AllPurposeChurchMemberControl.ChurchMembers.Announcements;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Families;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Members;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Users;

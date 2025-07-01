@@ -5,15 +5,15 @@
 ### 以下使用Visual Studio 2022 Community開啟編譯
 | SLN檔或CSPROJ檔名 | 作用 |
 | ----------------  | ---- |
-| **犬塚日葵小姐(563SH)**|SLN(主方案檔)|
+| **八奈見杏菜小姐(486A)**|SLN(主方案檔)|
 | Form式泛用基督教會會員管理系統|CSPROJ檔 (Windows視窗EXE應用程式)|
 | 泛用基督教會會員管理系統通用API|CSPROJ檔 (DLL)|
 | 泛用基督教會會員管理系統DAL|CSPROJ檔 (DLL)|
 | 泛用基督教會會員管理系統WEBAPI|CSPROJ檔 (支援Swagger介面的WEBAPI)|
 ### 以下獨立使用Visual Studio Code處理
-PythonWebChristianChurchMemberSystem為獨立Python Django專案，
+PythonWebChristianChurchMemberSystem為獨立Python Django專案
 ### 方案命名起源
-主方案檔名稱包含兩個日本動漫角色：「男女之間存在純友誼嗎(不,不存在」的女主角&amp;Hololive的麵包狗。
+主方案檔名稱包含兩個日本動漫角色：「敗北女角太多了」的女主角&amp;Hololive的大空鴨。
 ***
 ## 系統介紹
 - 開發能夠簡單部署、容易上手、簡潔明瞭、不管哪間教會都可以使用的會員管理系統。
@@ -32,6 +32,10 @@ PythonWebChristianChurchMemberSystem為獨立Python Django專案，
   - 會員資料新增/修改/刪除/列表
   - 家庭資料新增/修改/刪除/列表
 ---
+## 開發中功能
+- 系統公告
+  - 新增/修改/刪除/列表:通用API DLL端初步CODING就緒
+- 代禱事項改為一人多筆獨立模組，以利後續追蹤與傳道人關懷查詢用
 ---
 以下功能為無論教會規模、牧養模式、是否已有系統等條件下，皆建議開發的基本功能模組（Minimum Viable Product, MVP）：
 ---
