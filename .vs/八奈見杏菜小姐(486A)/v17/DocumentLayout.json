@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2872932E-E164-43C6-BD18-31E71B2FCB07}|Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71.pyproj|C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\app\\templates\\app\\layout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2872932E-E164-43C6-BD18-31E71B2FCB07}|Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71.pyproj|solutionrelative:Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\app\\templates\\app\\layout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2872932E-E164-43C6-BD18-31E71B2FCB07}|Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71.pyproj|C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\app\\templates\\app\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2872932E-E164-43C6-BD18-31E71B2FCB07}|Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71.pyproj|solutionrelative:Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\app\\templates\\app\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -34,40 +38,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "layout.html",
+              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\app\\templates\\app\\layout.html",
+              "RelativeDocumentMoniker": "Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\app\\templates\\app\\layout.html",
+              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\app\\templates\\app\\layout.html",
+              "RelativeToolTip": "Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\app\\templates\\app\\layout.html",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAkAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-07-03T02:28:37.411Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\app\\templates\\app\\index.html",
               "RelativeDocumentMoniker": "Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\app\\templates\\app\\index.html",
               "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\app\\templates\\app\\index.html",
               "RelativeToolTip": "Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\app\\templates\\app\\index.html",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-07-03T01:49:21.117Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:2:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ClsChurchDataSaver.cs",
               "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\API_AllPurposeChurchMemberControl\\ChurchMemberAccess\\ClsChurchDataSaver.cs",
               "RelativeDocumentMoniker": "API_AllPurposeChurchMemberControl\\ChurchMemberAccess\\ClsChurchDataSaver.cs",
@@ -75,12 +80,11 @@
               "RelativeToolTip": "API_AllPurposeChurchMemberControl\\ChurchMemberAccess\\ClsChurchDataSaver.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJMBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T03:56:19.016Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T03:56:19.016Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Form\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\Form1.cs",
               "RelativeDocumentMoniker": "Form\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\Form1.cs",
@@ -92,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Form\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71",
               "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Form\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\Form\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71.csproj",
               "RelativeDocumentMoniker": "Form\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\Form\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71.csproj",
@@ -103,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FrmAnnouncementView.cs",
               "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Form\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\SubForms\\Announcement\\FrmAnnouncementView.cs",
               "RelativeDocumentMoniker": "Form\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\SubForms\\Announcement\\FrmAnnouncementView.cs",
@@ -115,8 +119,16 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "FrmAnnouncementView.cs [\u8A2D\u8A08]",
               "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Form\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\SubForms\\Announcement\\FrmAnnouncementView.cs",
               "RelativeDocumentMoniker": "Form\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\\SubForms\\Announcement\\FrmAnnouncementView.cs",
