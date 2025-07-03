@@ -1,0 +1,1 @@
+C:\Users\GARY LU\Documents\Visual Studio 2022\ChristianChurchMemberSystem\Django式泛用基督教會會員管理系統\obj\Any CPU\Debug\Django式泛用基督教會會員管理系統.pyproj.CoreCompileInputs.cache

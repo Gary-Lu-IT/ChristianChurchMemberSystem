@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Form式泛用基督教會�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "泛用基督教會會員管理系統WEBAPI", "WEBAPI_ChristianChurchMemberSystem\泛用基督教會會員管理系統WEBAPI.csproj", "{0EA7E18F-BA47-429D-A445-9E19C504BACE}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Django式泛用基督教會會員管理系統", "Django式泛用基督教會會員管理系統\Django式泛用基督教會會員管理系統.pyproj", "{2872932E-E164-43C6-BD18-31E71B2FCB07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0EA7E18F-BA47-429D-A445-9E19C504BACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EA7E18F-BA47-429D-A445-9E19C504BACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EA7E18F-BA47-429D-A445-9E19C504BACE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2872932E-E164-43C6-BD18-31E71B2FCB07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2872932E-E164-43C6-BD18-31E71B2FCB07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2872932E-E164-43C6-BD18-31E71B2FCB07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2872932E-E164-43C6-BD18-31E71B2FCB07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

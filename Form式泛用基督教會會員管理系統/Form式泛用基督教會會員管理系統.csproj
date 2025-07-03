@@ -7,7 +7,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyName>Form_AllPurposeChurchMemberControl</AssemblyName>
-    <Version>0.0.3</Version>
+    <Version>0.0.4</Version>
     <Authors>Gary Lu(Sakuramori Akane 111A)</Authors>
   </PropertyGroup>
 

@@ -13,11 +13,11 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gary Lu(Sakuramori Akane 111A)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.3.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.3+6dc9d7b0422cf7d78225ed2788f399624387c035")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.4.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.4+bf011c09ace70f95f29ecc5501744d603acf953b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Form_AllPurposeChurchMemberControl")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Form_AllPurposeChurchMemberControl")]
-[assembly: System.Reflection.AssemblyVersionAttribute("0.0.3.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("0.0.4.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 
