@@ -1,33 +1,43 @@
-{% extends "app/layout.html" %}
+﻿{% extends "app/layout.html" %}
 
 {% block content %}
+<body class="bg-gray-100 text-gray-800">
+    <!-- 頁首 -->
+    <header class="bg-white shadow p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-indigo-600">教會會員管理系統</h1>
+        <div class="flex space-x-4">
+            {% if user.is_authenticated %}
+            <span class="text-sm">歡迎，{{ user.username }}</span>
+            <a href="{% url 'logout' %}" class="text-red-500 hover:underline">登出</a>
+            {% else %}
+            <a href="{% url 'login' %}" class="text-indigo-500 hover:underline">登入</a>
+            {% endif %}
+        </div>
+    </header>
 
-<div class="jumbotron">
-    <h1>Django</h1>
-    <p class="lead">Django is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://www.djangoproject.com/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-</div>
+    <!-- 功能選單 -->
+    <nav class="bg-indigo-100 px-4 py-2 flex space-x-6 text-sm">
+        <a href="{% url 'members:list' %}" class="hover:text-indigo-600">會員資料</a>
+        <a href="{% url 'attendance:list' %}" class="hover:text-indigo-600">出席記錄</a>
+        <a href="{% url 'offerings:list' %}" class="hover:text-indigo-600">奉獻管理</a>
+        <a href="{% url 'events:list' %}" class="hover:text-indigo-600">活動課程</a>
+        <a href="{% url 'announcements:list' %}" class="hover:text-indigo-600">公告管理</a>
+    </nav>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            Django gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://djangobook.com/django-tutorials/">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>The Python Package Index is a repository of software for the Python programming language.</p>
-        <p><a class="btn btn-default" href="https://pypi.org/">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Microsoft Azure</h2>
-        <p>You can easily publish to Microsoft Azure using Visual Studio. Find out how you can host your application using a free trial today.</p>
-        <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
-    </div>
-</div>
+    <!-- 公告區 -->
+    <main class="p-6">
+        <h2 class="text-xl font-semibold mb-4">📢 最新公告</h2>
+        <div class="space-y-4">
+            {% for announcement in announcements %}
+            <div class="bg-white shadow p-4 rounded">
+                <h3 class="font-bold text-lg">{{ announcement.title }}</h3>
+                <p class="text-sm text-gray-500">{{ announcement.posted_at|date:"Y-m-d H:i" }}</p>
+                <p class="mt-2">{{ announcement.content }}</p>
+            </div>
+            {% empty %}
+            <p class="text-gray-500">目前沒有公告。</p>
+            {% endfor %}
+        </div>
+    </main>
 
-{% endblock %}
+    {% endblock %}

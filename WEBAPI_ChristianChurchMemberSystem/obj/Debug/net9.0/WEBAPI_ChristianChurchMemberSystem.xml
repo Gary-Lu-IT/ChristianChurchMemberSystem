@@ -4,6 +4,24 @@
         <name>WEBAPI_ChristianChurchMemberSystem</name>
     </assembly>
     <members>
+        <member name="T:WEBAPI_ChristianChurchMemberSystem.Controllers.AnnouncementController">
+            <summary>公告管理控制器</summary>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.AnnouncementController.PublishAnnouncement(DAL_AllPurposeChurchMemberControl.ChurchMembers.Announcements.ClsAnnouncementData)">
+            <summary>發布公告：管理員發布系統公告。</summary>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.AnnouncementController.UpdateAnnouncement(DAL_AllPurposeChurchMemberControl.ChurchMembers.Announcements.ClsAnnouncementData)">
+            <summary>更新公告：修改現有公告的內容。</summary>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.AnnouncementController.DeleteAnnouncement(DAL_AllPurposeChurchMemberControl.ChurchMembers.Announcements.ClsAnnouncementIdPack)">
+            <summary>刪除公告：移除一個公告。</summary>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.AnnouncementController.GetAnnouncementList">
+            <summary>取得公告列表：查詢系統公告列表。</summary>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.AnnouncementController.GetAnnouncementById(DAL_AllPurposeChurchMemberControl.ChurchMembers.Announcements.ClsAnnouncementIdPack)">
+            <summary>取得單筆系統公告。</summary>
+        </member>
         <member name="T:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController">
             <summary>家庭資料管理模組</summary>
         </member>

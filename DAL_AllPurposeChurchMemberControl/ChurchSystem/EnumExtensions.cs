@@ -44,7 +44,7 @@ namespace DAL_AllPurposeChurchMemberControl.ChurchSystem
         AnnouncementIDNotExist =161,
         /// <summary>系統不明錯誤</summary>
         [DataType("系統不明錯誤")]
-        SystemError = 1001
+        SystemError = 10001
     }
 
     /// <summary>Enum 擴充方法：取得 DataType 屬性的描述文字</summary>
