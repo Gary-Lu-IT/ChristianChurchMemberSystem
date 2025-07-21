@@ -11,13 +11,13 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Form_AllPurposeChurchMemberControl")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Gary Lu(Sakuramori Akane 111A)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+56eab0a04e3ffe9459646abf7692b8ac73dce422")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.4.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.4+1c109c09b48c8e6d468c3f12f986373c14571dba")]
 [assembly: System.Reflection.AssemblyProductAttribute("Form_AllPurposeChurchMemberControl")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Form_AllPurposeChurchMemberControl")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("0.0.4.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 

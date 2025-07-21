@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WEBAPI_ChristianChurchMemberSystem</name>
+    </assembly>
+    <members>
+        <member name="T:WEBAPI_ChristianChurchMemberSystem.Controllers.AnnouncementController">
+            <summary>公告管理控制器</summary>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.AnnouncementController.PublishAnnouncement(DAL_AllPurposeChurchMemberControl.ChurchMembers.Announcements.ClsAnnouncementData)">
+            <summary>發布公告：管理員發布系統公告。</summary>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.AnnouncementController.UpdateAnnouncement(DAL_AllPurposeChurchMemberControl.ChurchMembers.Announcements.ClsAnnouncementData)">
+            <summary>更新公告：修改現有公告的內容。</summary>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.AnnouncementController.DeleteAnnouncement(DAL_AllPurposeChurchMemberControl.ChurchMembers.Announcements.ClsAnnouncementIdPack)">
+            <summary>刪除公告：移除一個公告。</summary>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.AnnouncementController.GetAnnouncementList">
+            <summary>取得公告列表：查詢系統公告列表。</summary>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.AnnouncementController.GetAnnouncementById(DAL_AllPurposeChurchMemberControl.ChurchMembers.Announcements.ClsAnnouncementIdPack)">
+            <summary>取得單筆系統公告。</summary>
+        </member>
+        <member name="T:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController">
+            <summary>家庭資料管理模組</summary>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController.AddFamily(DAL_AllPurposeChurchMemberControl.ChurchMembers.Families.ClsFamilies)">
+            <summary>新增家庭資料：新增一個家庭的基本資料。</summary>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController.UpdateFamily(DAL_AllPurposeChurchMemberControl.ChurchMembers.Families.ClsFamilies)">
+            <summary>更新家庭資料：修改現有家庭的各項基本資料。</summary>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController.DeleteFamily(DAL_AllPurposeChurchMemberControl.ChurchMembers.Families.ClsFamilyIdPack)">
+            <summary>刪除家庭資料：刪除指定的家庭資料。</summary>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController.GetFamilyList(DAL_AllPurposeChurchMemberControl.ChurchMembers.Families.ClsFamilyQueryParam)">
+            <summary>查詢家庭資料：根據條件查詢家庭資料。</summary>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.FamilyController.GetFamilyById(DAL_AllPurposeChurchMemberControl.ChurchMembers.Families.ClsFamilyIdPack)">
+            <summary>取得指定編號家庭資料</summary>
+        </member>
+        <member name="T:WEBAPI_ChristianChurchMemberSystem.Controllers.MemberController">
+            <summary>會員資料管理模組</summary>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.MemberController.AddMember(DAL_AllPurposeChurchMemberControl.ChurchMembers.Members.ClsMemberData)">
+            <summary>新增會員資料：新增一個會員的基本資料。</summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.MemberController.UpdateMember(DAL_AllPurposeChurchMemberControl.ChurchMembers.Members.ClsMemberData)">
+            <summary>更新會員資料：修改現有會員的各項基本資料。</summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.MemberController.GetMemberById(DAL_AllPurposeChurchMemberControl.ChurchMembers.Members.ClsMemberIdPack)">
+            <summary>取得單一會員資料：根據會員 ID 查詢單一會員的詳細資料。</summary>
+            <param name="memberIdPack"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.MemberController.DeleteMember(DAL_AllPurposeChurchMemberControl.ChurchMembers.Members.ClsMemberIdPack)">
+            <summary>刪除會員：從系統中移除一個會員資料</summary>
+            <param name="memberIdPack"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.MemberController.GetMemberList(DAL_AllPurposeChurchMemberControl.ChurchMembers.Members.ClsMemberQueryParam)">
+            <summary>取得會員清單：查詢所有會員或根據條件篩選會員清單。</summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
