@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|c:\\users\\gary lu\\documents\\visual studio 2022\\christianchurchmembersystem\\angular_christianchurchmembersystem\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|solutionrelative:angular_christianchurchmembersystem\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|c:\\users\\gary lu\\documents\\visual studio 2022\\christianchurchmembersystem\\angular_christianchurchmembersystem\\src\\app\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|solutionrelative:angular_christianchurchmembersystem\\src\\app\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,37 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "app.component.ts",
-              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.component.ts",
-              "RelativeDocumentMoniker": "Angular_ChristianChurchMemberSystem\\src\\app\\app.component.ts",
-              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.component.ts",
-              "RelativeToolTip": "Angular_ChristianChurchMemberSystem\\src\\app\\app.component.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-07-22T01:19:04.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "app.component.html",
-              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.component.html",
-              "RelativeDocumentMoniker": "Angular_ChristianChurchMemberSystem\\src\\app\\app.component.html",
-              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.component.html",
-              "RelativeToolTip": "Angular_ChristianChurchMemberSystem\\src\\app\\app.component.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAACgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-07-22T01:18:59.583Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -57,10 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         }
