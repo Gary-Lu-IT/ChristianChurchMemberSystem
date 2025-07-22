@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C91BCB53-794C-4FB1-89EC-79BBCA97972C}|Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\u524D\u7AEF\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\u524D\u7AEF.pyproj|C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\u524D\u7AEF\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\u524D\u7AEF\\settings.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{C91BCB53-794C-4FB1-89EC-79BBCA97972C}|Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\u524D\u7AEF\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\u524D\u7AEF.pyproj|solutionrelative:Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\u524D\u7AEF\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\u524D\u7AEF\\settings.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|c:\\users\\gary lu\\documents\\visual studio 2022\\christianchurchmembersystem\\angular_christianchurchmembersystem\\angular.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|solutionrelative:angular_christianchurchmembersystem\\angular.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|c:\\users\\gary lu\\documents\\visual studio 2022\\christianchurchmembersystem\\angular_christianchurchmembersystem\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|solutionrelative:angular_christianchurchmembersystem\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|c:\\users\\gary lu\\documents\\visual studio 2022\\christianchurchmembersystem\\angular_christianchurchmembersystem\\src\\app\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|solutionrelative:angular_christianchurchmembersystem\\src\\app\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +31,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "settings.py",
-              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\u524D\u7AEF\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\u524D\u7AEF\\settings.py",
-              "RelativeDocumentMoniker": "Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\u524D\u7AEF\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\u524D\u7AEF\\settings.py",
-              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\u524D\u7AEF\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\u524D\u7AEF\\settings.py",
-              "RelativeToolTip": "Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\u524D\u7AEF\\Django\u5F0F\u6CDB\u7528\u57FA\u7763\u6559\u6703\u6703\u54E1\u7BA1\u7406\u7CFB\u7D71\u524D\u7AEF\\settings.py",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-07-21T06:54:29.481Z",
+              "Title": "angular.json",
+              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\angular.json",
+              "RelativeDocumentMoniker": "Angular_ChristianChurchMemberSystem\\angular.json",
+              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\angular.json",
+              "RelativeToolTip": "Angular_ChristianChurchMemberSystem\\angular.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-22T00:48:19.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "app-routing.module.ts",
+              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app-routing.module.ts",
+              "RelativeDocumentMoniker": "Angular_ChristianChurchMemberSystem\\src\\app\\app-routing.module.ts",
+              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app-routing.module.ts",
+              "RelativeToolTip": "Angular_ChristianChurchMemberSystem\\src\\app\\app-routing.module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-22T00:47:21.16Z",
               "EditorCaption": ""
             },
             {
@@ -40,6 +61,23 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "app.component.html",
+              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.component.html",
+              "RelativeDocumentMoniker": "Angular_ChristianChurchMemberSystem\\src\\app\\app.component.html",
+              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.component.html",
+              "RelativeToolTip": "Angular_ChristianChurchMemberSystem\\src\\app\\app.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-07-21T08:26:05.738Z",
+              "EditorCaption": ""
             }
           ]
         }

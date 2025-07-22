@@ -9,9 +9,21 @@
 </header>
 
 <nav class="app-menu">
-  <ul>
-    <li><a routerLink="/member">教友資料管理</a></li>
-    <li><a routerLink="/announcement">公告管理</a></li>
+  <ul class="nav">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="memberDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" (click)="SwitchMemberMenu()">
+        教友資料管理
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="memberDropdown" *ngIf="MemberMenu">
+        <li><a class="dropdown-item" routerLink="/member/basic">教友基本資料</a></li>
+        <li><a class="dropdown-item" routerLink="/member/account">系統帳戶管理</a></li>
+        <li><a class="dropdown-item" routerLink="/member/family">教友家庭資料</a></li>
+      </ul>
+    </li>
+    <li class="nav-item"><a class="nav-link" routerLink="/announcement">公告管理</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="/">活動管理</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="/">奉獻管理</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="/">統計報表</a></li>
   </ul>
 </nav>
 

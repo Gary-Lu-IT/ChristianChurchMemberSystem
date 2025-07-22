@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gary Lu(Sakuramori Akane 111A)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.4.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.4+3ca0f391e26840be0a62f41f3350b66d50c4f876")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.4+0817edbf9ac263d12195a9725c6d5c5c5dcaf4e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Form_AllPurposeChurchMemberControl")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Form_AllPurposeChurchMemberControl")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.0.4.0")]
