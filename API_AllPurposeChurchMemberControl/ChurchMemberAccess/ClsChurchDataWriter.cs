@@ -292,6 +292,11 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
         #endregion
 
         #region 五、活動與課程模組 (Activity & Course Module) 此模組負責建立活動/課程、管理報名與出席。
+        #region 活動/課程基本資料
+        #endregion
+
+        #region 活動/課程報名與出席
+        #endregion
         #endregion
 
         #region 六、公告通知模組 (Announcement Module) 此模組負責發布和管理系統公告

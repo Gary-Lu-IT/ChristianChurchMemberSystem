@@ -33,6 +33,8 @@ public partial class ChurchMembersContext : DbContext
 
     public virtual DbSet<prayer_requests> prayer_requests { get; set; }
 
+    public virtual DbSet<regular_event_setting> regular_event_setting { get; set; }
+
     public virtual DbSet<users> users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
