@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|c:\\users\\gary lu\\documents\\visual studio 2022\\christianchurchmembersystem\\angular_christianchurchmembersystem\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|solutionrelative:angular_christianchurchmembersystem\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "app.component.ts",
+              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.component.ts",
+              "RelativeDocumentMoniker": "Angular_ChristianChurchMemberSystem\\src\\app\\app.component.ts",
+              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.component.ts",
+              "RelativeToolTip": "Angular_ChristianChurchMemberSystem\\src\\app\\app.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-24T02:46:32.135Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",

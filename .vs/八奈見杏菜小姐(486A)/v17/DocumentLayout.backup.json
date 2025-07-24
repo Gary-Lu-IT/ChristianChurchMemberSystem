@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|c:\\users\\gary lu\\documents\\visual studio 2022\\christianchurchmembersystem\\angular_christianchurchmembersystem\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|solutionrelative:angular_christianchurchmembersystem\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|c:\\users\\gary lu\\documents\\visual studio 2022\\christianchurchmembersystem\\angular_christianchurchmembersystem\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|solutionrelative:angular_christianchurchmembersystem\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|c:\\users\\gary lu\\documents\\visual studio 2022\\christianchurchmembersystem\\angular_christianchurchmembersystem\\src\\app\\services\\announcement.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|solutionrelative:angular_christianchurchmembersystem\\src\\app\\services\\announcement.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|c:\\users\\gary lu\\documents\\visual studio 2022\\christianchurchmembersystem\\angular_christianchurchmembersystem\\src\\app\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|solutionrelative:angular_christianchurchmembersystem\\src\\app\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|c:\\users\\gary lu\\documents\\visual studio 2022\\christianchurchmembersystem\\angular_christianchurchmembersystem\\src\\classes\\announcement.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|solutionrelative:angular_christianchurchmembersystem\\src\\classes\\announcement.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|c:\\users\\gary lu\\documents\\visual studio 2022\\christianchurchmembersystem\\angular_christianchurchmembersystem\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{0ABE2237-C740-32E3-361B-5C60180238EA}|Angular_ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem.esproj|solutionrelative:angular_christianchurchmembersystem\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "app.component.ts",
+              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.component.ts",
+              "RelativeDocumentMoniker": "Angular_ChristianChurchMemberSystem\\src\\app\\app.component.ts",
+              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.component.ts",
+              "RelativeToolTip": "Angular_ChristianChurchMemberSystem\\src\\app\\app.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-24T02:46:32.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "app.component.html",
+              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.component.html",
+              "RelativeDocumentMoniker": "Angular_ChristianChurchMemberSystem\\src\\app\\app.component.html",
+              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.component.html",
+              "RelativeToolTip": "Angular_ChristianChurchMemberSystem\\src\\app\\app.component.html",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwCEAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-07-24T02:40:48.041Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -43,70 +57,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "app.module.ts",
-              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.module.ts",
-              "RelativeDocumentMoniker": "Angular_ChristianChurchMemberSystem\\src\\app\\app.module.ts",
-              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.module.ts",
-              "RelativeToolTip": "Angular_ChristianChurchMemberSystem\\src\\app\\app.module.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-07-22T02:21:11.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "announcement.service.ts",
-              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\Services\\announcement.service.ts",
-              "RelativeDocumentMoniker": "Angular_ChristianChurchMemberSystem\\src\\app\\Services\\announcement.service.ts",
-              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\Services\\announcement.service.ts",
-              "RelativeToolTip": "Angular_ChristianChurchMemberSystem\\src\\app\\Services\\announcement.service.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-07-22T02:19:48.193Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "app.component.ts",
-              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.component.ts",
-              "RelativeDocumentMoniker": "Angular_ChristianChurchMemberSystem\\src\\app\\app.component.ts",
-              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.component.ts",
-              "RelativeToolTip": "Angular_ChristianChurchMemberSystem\\src\\app\\app.component.ts",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAmwA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-07-22T01:19:04.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "app.component.html",
-              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.component.html",
-              "RelativeDocumentMoniker": "Angular_ChristianChurchMemberSystem\\src\\app\\app.component.html",
-              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\app\\app.component.html",
-              "RelativeToolTip": "Angular_ChristianChurchMemberSystem\\src\\app\\app.component.html",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-07-22T01:18:59.583Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Announcement.ts",
-              "DocumentMoniker": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\Classes\\Announcement.ts",
-              "RelativeDocumentMoniker": "Angular_ChristianChurchMemberSystem\\src\\Classes\\Announcement.ts",
-              "ToolTip": "C:\\Users\\GARY LU\\Documents\\Visual Studio 2022\\ChristianChurchMemberSystem\\Angular_ChristianChurchMemberSystem\\src\\Classes\\Announcement.ts",
-              "RelativeToolTip": "Angular_ChristianChurchMemberSystem\\src\\Classes\\Announcement.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-07-22T02:20:28.999Z"
             }
           ]
         }

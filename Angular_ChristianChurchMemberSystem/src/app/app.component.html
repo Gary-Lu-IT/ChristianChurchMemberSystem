@@ -11,17 +11,29 @@
 <nav class="app-menu">
   <ul class="nav">
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="memberDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" (click)="SwitchMemberMenu()">
+      <a class="nav-link dropdown-toggle" href="#" id="memberDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" (click)="SwitchShowMenu('member')">
         教友資料管理
       </a>
-      <ul class="dropdown-menu" aria-labelledby="memberDropdown" *ngIf="MemberMenu">
-        <li><a class="dropdown-item" routerLink="/member/basic">教友基本資料</a></li>
-        <li><a class="dropdown-item" routerLink="/member/account">系統帳戶管理</a></li>
-        <li><a class="dropdown-item" routerLink="/member/family">教友家庭資料</a></li>
+      <ul class="dropdown-menu" aria-labelledby="memberDropdown" *ngIf="ShowMenu=='member'">
+        <li><a class="dropdown-item" routerLink="/">教友基本資料</a></li>
+        <li><a class="dropdown-item" routerLink="/">系統帳戶管理</a></li>
+        <li><a class="dropdown-item" routerLink="/">教友家庭資料</a></li>
+        <li><a class="dropdown-item" routerLink="/">代禱事項管理</a></li>
       </ul>
     </li>
     <li class="nav-item"><a class="nav-link" routerLink="/announcement">公告管理</a></li>
-    <li class="nav-item"><a class="nav-link" routerLink="/">活動管理</a></li>
+    <!--<li class="nav-item"><a class="nav-link" routerLink="/">活動管理</a></li>-->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="memberDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" (click)="SwitchShowMenu('activity')">
+        活動管理
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="memberDropdown" *ngIf="ShowMenu=='activity'">
+        <li><a class="dropdown-item" routerLink="/">活動基本資料</a></li>
+        <li><a class="dropdown-item" routerLink="/">活動排程</a></li>
+        <li><a class="dropdown-item" routerLink="/">活動簽到</a></li>
+        <li><a class="dropdown-item" routerLink="/">活動出席狀況</a></li>
+      </ul>
+    </li>
     <li class="nav-item"><a class="nav-link" routerLink="/">奉獻管理</a></li>
     <li class="nav-item"><a class="nav-link" routerLink="/">統計報表</a></li>
   </ul>
