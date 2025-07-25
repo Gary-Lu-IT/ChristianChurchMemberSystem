@@ -17,6 +17,11 @@ export class AppComponent {
   }
   /** 切換教會會員管理下拉選單是否呈現*/
   SwitchShowMenu(sets:string) {
-    this.ShowMenu = sets;
+    if (this.ShowMenu === sets) {
+      this.ShowMenu = "";
+    }
+    else {
+      this.ShowMenu = sets;
+    }
   }
 }

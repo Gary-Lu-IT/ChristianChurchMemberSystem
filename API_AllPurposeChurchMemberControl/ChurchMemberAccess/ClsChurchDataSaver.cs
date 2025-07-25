@@ -1,4 +1,5 @@
 ﻿using DAL_AllPurposeChurchMemberControl.ChurchMembers.Announcements;
+using DAL_AllPurposeChurchMemberControl.ChurchMembers.Events;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Families;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Members;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Users;
@@ -358,6 +359,50 @@ public class MemberQueryDto
 
         #region 五、活動與課程模組 (Activity & Course Module) 此模組負責建立活動/課程、管理報名與出席。
         #region 活動/課程基本資料
+        /// <summary>新增定期活動/課程設定</summary>
+        /// <param name="events"></param>
+        public static void AddRegularEventSetting(ClsEvents events)
+        {
+            if (!events.FrequencyIsValid())
+            {
+                throw new ChurchMemberException(SystemReturnMessage.FrequencyNotValid);
+            }
+            ClsChurchDataWriter.AddRegularEventSetting(events);
+        }
+        /// <summary>修改定期活動/課程設定</summary>
+        /// <param name="events"></param>
+        /// <exception cref="ChurchMemberException"></exception>
+        public static void UpdateRegularEventSetting(ClsEvents events)
+        {
+            if (!events.FrequencyIsValid())
+            {
+                throw new ChurchMemberException(SystemReturnMessage.FrequencyNotValid);
+            }
+            ClsChurchDataWriter.UpdateRegularEventSetting(events);
+        }
+        /// <summary>刪除定期活動/課程設定。</summary>
+        /// <param name="EventSettingId"></param>
+        /// <exception cref="ChurchMemberException"></exception>
+        public static void DeleteRegularEventSetting(int EventSettingId)
+        {
+            ClsChurchDataWriter.DeleteRegularEventSetting(EventSettingId);
+        }
+        /// <summary>取得所有定期活動/課程設定。</summary>
+        /// <returns></returns>
+        public static IList<ClsEvents> GetRegularEventSettings()
+        {
+            return ClsChurchDataWriter.GetRegularEventSettings();
+        }
+        /// <summary>取得單筆定期活動/課程設定。</summary>
+        /// <param name="EventSettingId"></param>
+        /// <returns></returns>
+        public static ClsEvents? GetRegularEventSettingById(int EventSettingId)
+        {
+            return ClsChurchDataWriter.GetRegularEventSettingById(EventSettingId);
+        }
+        #endregion
+
+        #region 依據定期活動/課程安排行程
         #endregion
 
         #region 活動/課程報名與出席

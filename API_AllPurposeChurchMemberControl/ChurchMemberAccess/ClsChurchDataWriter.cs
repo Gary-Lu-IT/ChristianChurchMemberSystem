@@ -1,5 +1,6 @@
 ﻿using API_AllPurposeChurchMemberControl.SQLiteDB.Entity;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Announcements;
+using DAL_AllPurposeChurchMemberControl.ChurchMembers.Events;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Families;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Members;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Users;
@@ -292,7 +293,91 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
         #endregion
 
         #region 五、活動與課程模組 (Activity & Course Module) 此模組負責建立活動/課程、管理報名與出席。
-        #region 活動/課程基本資料
+        #region 定期活動/課程基本資料
+        /// <summary>新增定期活動/課程設定</summary>
+        /// <param name="events"></param>
+        public static void AddRegularEventSetting(ClsEvents events)
+        {
+            using ChurchMembersContext db = new();
+            db.regular_event_setting.Add(new regular_event_setting
+            {
+                title = events.EventName,
+                freq = events.Frequency,
+                holdtime = events.EventDate.ToString("yyyy/MM/dd HH:mm:ss)"),
+                location = events.EventLocation,
+                leader = events.Leader
+            });
+            db.SaveChanges();
+        }
+        /// <summary>修改定期活動/課程設定</summary>
+        /// <param name="events"></param>
+        /// <exception cref="ChurchMemberException"></exception>
+        public static void UpdateRegularEventSetting(ClsEvents events)
+        {
+            using ChurchMembersContext db = new();
+            regular_event_setting? e = db.regular_event_setting.Where(x => x.id == events.Id).FirstOrDefault();
+            if (e == null)
+            {
+                throw new ChurchMemberException(SystemReturnMessage.EventSettingIDNotExist);
+            }
+            else
+            {
+                e.title = events.EventName;
+                e.freq = events.Frequency;
+                e.holdtime = events.EventDate.ToString("yyyy/MM/dd HH:mm:ss");
+                e.location = events.EventLocation;
+                e.leader = events.Leader;
+                db.SaveChanges();
+            }
+        }
+        /// <summary>刪除定期活動/課程設定。</summary>
+        /// <param name="EventSettingId"></param>
+        /// <exception cref="ChurchMemberException"></exception>
+        public static void DeleteRegularEventSetting(int EventSettingId)
+        {
+            using ChurchMembersContext db = new();
+            regular_event_setting? e = db.regular_event_setting.Where(x => x.id == EventSettingId).FirstOrDefault();
+            if (e == null)
+            {
+                throw new ChurchMemberException(SystemReturnMessage.EventSettingIDNotExist);
+            }
+            db.regular_event_setting.Remove(e);
+            db.SaveChanges();
+        }
+        /// <summary>取得所有定期活動/課程設定。</summary>
+        /// <returns></returns>
+        public static IList<ClsEvents> GetRegularEventSettings()
+        {
+            using ChurchMembersContext db = new();
+            return db.regular_event_setting.Select(x => new ClsEvents
+            {
+                Id = x.id,
+                EventName = x.title ?? string.Empty,
+                Frequency = x.freq ?? string.Empty,
+                EventDate = DateTime.Parse(x.holdtime),
+                EventLocation = x.location ?? string.Empty,
+                Leader = x.leader ?? string.Empty
+            }).ToList();
+        }
+        /// <summary>取得單筆定期活動/課程設定。</summary>
+        /// <param name="EventSettingId"></param>
+        /// <returns></returns>
+        public static ClsEvents? GetRegularEventSettingById(int EventSettingId)
+        {
+            using ChurchMembersContext db = new();
+            return db.regular_event_setting.Where(x => x.id == EventSettingId).Select(x => new ClsEvents
+            {
+                Id = x.id,
+                EventName = x.title ?? string.Empty,
+                Frequency = x.freq ?? string.Empty,
+                EventDate = DateTime.Parse(x.holdtime),
+                EventLocation = x.location ?? string.Empty,
+                Leader = x.leader ?? string.Empty
+            }).FirstOrDefault();
+        }
+        #endregion
+
+        #region 依據定期活動/課程安排行程
         #endregion
 
         #region 活動/課程報名與出席

@@ -41,7 +41,13 @@ namespace DAL_AllPurposeChurchMemberControl.ChurchSystem
         FamilyHasMembers=142,
         /// <summary>公告ID不存在</summary>
         [DataType("公告ID不存在")]
-        AnnouncementIDNotExist =161,
+        AnnouncementIDNotExist = 161,
+        /// <summary>活動設定ID不存在</summary>
+        [DataType("活動設定ID不存在")]
+        EventSettingIDNotExist = 181,
+        /// <summary>活動頻率不正確</summary>
+        [DataType("活動頻率不正確")]
+        FrequencyNotValid = 182,
         /// <summary>系統不明錯誤</summary>
         [DataType("系統不明錯誤")]
         SystemError = 10001
