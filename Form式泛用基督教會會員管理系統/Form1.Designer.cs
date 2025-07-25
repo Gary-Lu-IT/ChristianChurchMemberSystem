@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             menuStrip1 = new MenuStrip();
             使用者帳號AToolStripMenuItem = new ToolStripMenuItem();
             TsmiLogin = new ToolStripMenuItem();
@@ -38,13 +39,13 @@
             TsmiPrayerRequests = new ToolStripMenuItem();
             系統SToolStripMenuItem = new ToolStripMenuItem();
             TsmiAnnouncements = new ToolStripMenuItem();
-            statusStrip1 = new StatusStrip();
-            TsslTime = new ToolStripStatusLabel();
-            TmrTime = new System.Windows.Forms.Timer(components);
             活動管理EToolStripMenuItem = new ToolStripMenuItem();
             TsmiEventScheduleSetting = new ToolStripMenuItem();
             TsmiActivityBasis = new ToolStripMenuItem();
             TsmiActivityCheckIn = new ToolStripMenuItem();
+            statusStrip1 = new StatusStrip();
+            TsslTime = new ToolStripStatusLabel();
+            TmrTime = new System.Windows.Forms.Timer(components);
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
@@ -114,6 +115,31 @@
             TsmiAnnouncements.Text = "公告列表(&A)";
             TsmiAnnouncements.Click += TsmiAnnouncements_Click;
             // 
+            // 活動管理EToolStripMenuItem
+            // 
+            活動管理EToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TsmiEventScheduleSetting, TsmiActivityBasis, TsmiActivityCheckIn });
+            活動管理EToolStripMenuItem.Name = "活動管理EToolStripMenuItem";
+            活動管理EToolStripMenuItem.Size = new Size(101, 23);
+            活動管理EToolStripMenuItem.Text = "活動管理(&E)";
+            // 
+            // TsmiEventScheduleSetting
+            // 
+            TsmiEventScheduleSetting.Name = "TsmiEventScheduleSetting";
+            TsmiEventScheduleSetting.Size = new Size(201, 26);
+            TsmiEventScheduleSetting.Text = "活動排程設定(&S)";
+            // 
+            // TsmiActivityBasis
+            // 
+            TsmiActivityBasis.Name = "TsmiActivityBasis";
+            TsmiActivityBasis.Size = new Size(201, 26);
+            TsmiActivityBasis.Text = "活動資料(&A)";
+            // 
+            // TsmiActivityCheckIn
+            // 
+            TsmiActivityCheckIn.Name = "TsmiActivityCheckIn";
+            TsmiActivityCheckIn.Size = new Size(201, 26);
+            TsmiActivityCheckIn.Text = "活動簽到(&C)";
+            // 
             // statusStrip1
             // 
             statusStrip1.ImageScalingSize = new Size(20, 20);
@@ -134,31 +160,6 @@
             // 
             TmrTime.Tick += TickToShowCurrentTime;
             // 
-            // 活動管理EToolStripMenuItem
-            // 
-            活動管理EToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TsmiEventScheduleSetting, TsmiActivityBasis, TsmiActivityCheckIn });
-            活動管理EToolStripMenuItem.Name = "活動管理EToolStripMenuItem";
-            活動管理EToolStripMenuItem.Size = new Size(101, 23);
-            活動管理EToolStripMenuItem.Text = "活動管理(&E)";
-            // 
-            // TsmiEventScheduleSetting
-            // 
-            TsmiEventScheduleSetting.Name = "TsmiEventScheduleSetting";
-            TsmiEventScheduleSetting.Size = new Size(224, 26);
-            TsmiEventScheduleSetting.Text = "活動排程設定(&S)";
-            // 
-            // TsmiActivityBasis
-            // 
-            TsmiActivityBasis.Name = "TsmiActivityBasis";
-            TsmiActivityBasis.Size = new Size(224, 26);
-            TsmiActivityBasis.Text = "活動資料(&A)";
-            // 
-            // TsmiActivityCheckIn
-            // 
-            TsmiActivityCheckIn.Name = "TsmiActivityCheckIn";
-            TsmiActivityCheckIn.Size = new Size(224, 26);
-            TsmiActivityCheckIn.Text = "活動簽到(&C)";
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 19F);
@@ -166,6 +167,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
             Name = "Form1";

@@ -7,7 +7,7 @@ builder.Services.AddCors(option =>
 {
     option.AddPolicy("ChristianCORS", policy =>
     {
-        policy.AllowAnyMethod().AllowAnyOrigin();
+        policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin();
     });
 });
 builder.Services.AddControllers();

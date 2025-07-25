@@ -9,7 +9,12 @@
     <AssemblyName>Form_AllPurposeChurchMemberControl</AssemblyName>
     <Version>0.0.4</Version>
     <Authors>Gary Lu(Sakuramori Akane 111A)</Authors>
+    <ApplicationIcon>favicon (1).ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="favicon (1).ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\API_AllPurposeChurchMemberControl\泛用基督教會會員管理系統通用API.csproj" />
