@@ -41,6 +41,10 @@
             statusStrip1 = new StatusStrip();
             TsslTime = new ToolStripStatusLabel();
             TmrTime = new System.Windows.Forms.Timer(components);
+            活動管理EToolStripMenuItem = new ToolStripMenuItem();
+            TsmiEventScheduleSetting = new ToolStripMenuItem();
+            TsmiActivityBasis = new ToolStripMenuItem();
+            TsmiActivityCheckIn = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
@@ -48,10 +52,10 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { 使用者帳號AToolStripMenuItem, 教友MToolStripMenuItem, 系統SToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { 使用者帳號AToolStripMenuItem, 教友MToolStripMenuItem, 系統SToolStripMenuItem, 活動管理EToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.Size = new Size(800, 27);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -59,7 +63,7 @@
             // 
             使用者帳號AToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TsmiLogin });
             使用者帳號AToolStripMenuItem.Name = "使用者帳號AToolStripMenuItem";
-            使用者帳號AToolStripMenuItem.Size = new Size(118, 24);
+            使用者帳號AToolStripMenuItem.Size = new Size(118, 23);
             使用者帳號AToolStripMenuItem.Text = "使用者帳號(&A)";
             // 
             // TsmiLogin
@@ -73,7 +77,7 @@
             // 
             教友MToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TsmiMemberList, TsmiFamilyList, TsmiPrayerRequests });
             教友MToolStripMenuItem.Name = "教友MToolStripMenuItem";
-            教友MToolStripMenuItem.Size = new Size(107, 24);
+            教友MToolStripMenuItem.Size = new Size(107, 23);
             教友MToolStripMenuItem.Text = "教友管理(&M)";
             // 
             // TsmiMemberList
@@ -100,13 +104,13 @@
             // 
             系統SToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TsmiAnnouncements });
             系統SToolStripMenuItem.Name = "系統SToolStripMenuItem";
-            系統SToolStripMenuItem.Size = new Size(72, 24);
+            系統SToolStripMenuItem.Size = new Size(72, 23);
             系統SToolStripMenuItem.Text = "系統(&S)";
             // 
             // TsmiAnnouncements
             // 
             TsmiAnnouncements.Name = "TsmiAnnouncements";
-            TsmiAnnouncements.Size = new Size(224, 26);
+            TsmiAnnouncements.Size = new Size(172, 26);
             TsmiAnnouncements.Text = "公告列表(&A)";
             TsmiAnnouncements.Click += TsmiAnnouncements_Click;
             // 
@@ -129,6 +133,31 @@
             // TmrTime
             // 
             TmrTime.Tick += TickToShowCurrentTime;
+            // 
+            // 活動管理EToolStripMenuItem
+            // 
+            活動管理EToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { TsmiEventScheduleSetting, TsmiActivityBasis, TsmiActivityCheckIn });
+            活動管理EToolStripMenuItem.Name = "活動管理EToolStripMenuItem";
+            活動管理EToolStripMenuItem.Size = new Size(101, 23);
+            活動管理EToolStripMenuItem.Text = "活動管理(&E)";
+            // 
+            // TsmiEventScheduleSetting
+            // 
+            TsmiEventScheduleSetting.Name = "TsmiEventScheduleSetting";
+            TsmiEventScheduleSetting.Size = new Size(224, 26);
+            TsmiEventScheduleSetting.Text = "活動排程設定(&S)";
+            // 
+            // TsmiActivityBasis
+            // 
+            TsmiActivityBasis.Name = "TsmiActivityBasis";
+            TsmiActivityBasis.Size = new Size(224, 26);
+            TsmiActivityBasis.Text = "活動資料(&A)";
+            // 
+            // TsmiActivityCheckIn
+            // 
+            TsmiActivityCheckIn.Name = "TsmiActivityCheckIn";
+            TsmiActivityCheckIn.Size = new Size(224, 26);
+            TsmiActivityCheckIn.Text = "活動簽到(&C)";
             // 
             // Form1
             // 
@@ -163,5 +192,9 @@
         private ToolStripMenuItem TsmiPrayerRequests;
         private ToolStripMenuItem 系統SToolStripMenuItem;
         private ToolStripMenuItem TsmiAnnouncements;
+        private ToolStripMenuItem 活動管理EToolStripMenuItem;
+        private ToolStripMenuItem TsmiEventScheduleSetting;
+        private ToolStripMenuItem TsmiActivityBasis;
+        private ToolStripMenuItem TsmiActivityCheckIn;
     }
 }

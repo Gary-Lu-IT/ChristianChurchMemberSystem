@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <Folder Include="SubForms\ChurchSystem\" />
+    <Folder Include="SubForms\Events\" />
   </ItemGroup>
 
 </Project>

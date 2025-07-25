@@ -15,6 +15,8 @@ Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Angular_ChristianChurchMemb
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Django式泛用基督教會會員管理系統前端", "Django式泛用基督教會會員管理系統前端\Django式泛用基督教會會員管理系統前端.pyproj", "{C91BCB53-794C-4FB1-89EC-79BBCA97972C}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "react_christianchurchmembersystem", "React_ChristianChurchMemberSystem\react_christianchurchmembersystem.esproj", "{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +105,24 @@ Global
 		{C91BCB53-794C-4FB1-89EC-79BBCA97972C}.Release|x64.Build.0 = Release|Any CPU
 		{C91BCB53-794C-4FB1-89EC-79BBCA97972C}.Release|x86.ActiveCfg = Release|Any CPU
 		{C91BCB53-794C-4FB1-89EC-79BBCA97972C}.Release|x86.Build.0 = Release|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Debug|x64.Build.0 = Debug|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Debug|x86.Build.0 = Debug|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Release|x64.ActiveCfg = Release|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Release|x64.Build.0 = Release|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Release|x64.Deploy.0 = Release|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Release|x86.ActiveCfg = Release|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Release|x86.Build.0 = Release|Any CPU
+		{07F49239-DCCE-5DD5-4C5F-DC3441E2A48D}.Release|x86.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
