@@ -13,6 +13,12 @@
     <Compile Update="SubForms\Announcement\FrmAnnouncementView.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="SubForms\Events\FrmEventSettingEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SubForms\Events\FrmEventSettingView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="SubForms\Family\FrmFamilyEditor.cs">
       <SubType>Form</SubType>
     </Compile>
