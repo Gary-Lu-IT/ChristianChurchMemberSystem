@@ -10,6 +10,8 @@
         public string Frequency { get; set; } = string.Empty;
         /// <summary>事件日期</summary>
         public DateTime EventDate { get; set; }
+        /// <summary>舉辦時間</summary>
+        public string EventTime { get; set; } = string.Empty;
         /// <summary>事件地點</summary>
         public string EventLocation { get; set; } = string.Empty;
         /// <summary>講師</summary>
