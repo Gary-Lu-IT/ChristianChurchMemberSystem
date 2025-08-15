@@ -48,6 +48,9 @@ namespace DAL_AllPurposeChurchMemberControl.ChurchSystem
         /// <summary>活動頻率不正確</summary>
         [DataType("活動頻率不正確")]
         FrequencyNotValid = 182,
+        /// <summary>活動時間格式不正確，請使用 HH:mm 格式。</summary>
+        [DataType("活動時間格式不正確，請使用 HH:mm 格式。")]
+        InvalidTimeFormat=183,
         /// <summary>系統不明錯誤</summary>
         [DataType("系統不明錯誤")]
         SystemError = 10001

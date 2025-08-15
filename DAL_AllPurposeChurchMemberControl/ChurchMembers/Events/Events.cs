@@ -1,5 +1,11 @@
-﻿namespace DAL_AllPurposeChurchMemberControl.ChurchMembers.Events
+﻿using DAL_AllPurposeChurchMemberControl.ChurchMembers.Members;
+
+namespace DAL_AllPurposeChurchMemberControl.ChurchMembers.Events
 {
+    /// <summary>事件ID封包</summary>
+    public class ClsEventIdPack : ClsIdPackBase
+    {
+    }
     /// <summary>事件資訊</summary>
     public class ClsEvents
     {

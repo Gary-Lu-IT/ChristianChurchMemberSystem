@@ -1,10 +1,11 @@
-﻿using DAL_AllPurposeChurchMemberControl.ChurchMembers.Announcements;
+﻿using System.Security.Cryptography;
+using System.Text.RegularExpressions;
+using DAL_AllPurposeChurchMemberControl.ChurchMembers.Announcements;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Events;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Families;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Members;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Users;
 using DAL_AllPurposeChurchMemberControl.ChurchSystem;
-using System.Security.Cryptography;
 
 namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
 {
@@ -367,6 +368,11 @@ public class MemberQueryDto
             {
                 throw new ChurchMemberException(SystemReturnMessage.FrequencyNotValid);
             }
+            // 檢查時間格式是否有效
+            if (!IsValidTimeFormat(events.EventTime))
+            {
+                throw new ChurchMemberException(SystemReturnMessage.InvalidTimeFormat);
+            }
             ClsChurchDataWriter.AddRegularEventSetting(events);
         }
         /// <summary>修改定期活動/課程設定</summary>
@@ -377,6 +383,11 @@ public class MemberQueryDto
             if (!events.FrequencyIsValid())
             {
                 throw new ChurchMemberException(SystemReturnMessage.FrequencyNotValid);
+            }
+            // 檢查時間格式是否有效
+            if (!IsValidTimeFormat(events.EventTime))
+            {
+                throw new ChurchMemberException(SystemReturnMessage.InvalidTimeFormat);
             }
             ClsChurchDataWriter.UpdateRegularEventSetting(events);
         }
@@ -495,6 +506,18 @@ public class MemberQueryDto
 
             // 比較兩個雜湊是否一致
             return CryptographicOperations.FixedTimeEquals(storedHash, hashToCheck);
+        }
+        #endregion
+
+        #region 正規表示式(Regular Expressions,Regex)
+        /// <summary>輸入字串是否是正確時間格式</summary>
+        /// <param name="InputTime"></param>
+        /// <returns></returns>
+        private static bool IsValidTimeFormat(string InputTime)
+        {
+            // 正規表示式：HH:mm 格式
+            string pattern = @"^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$";
+            return Regex.IsMatch(InputTime, pattern);
         }
         #endregion
         #endregion
