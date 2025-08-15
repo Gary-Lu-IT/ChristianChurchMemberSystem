@@ -90,7 +90,7 @@
             Font = new Font("Microsoft JhengHei UI", 12F);
             Margin = new Padding(4);
             Name = "FrmEventSettingView";
-            Text = "FrmEventSettingView";
+            Text = "定期活動設定視窗";
             ((System.ComponentModel.ISupportInitialize)DgvEventSettingView).EndInit();
             ResumeLayout(false);
         }

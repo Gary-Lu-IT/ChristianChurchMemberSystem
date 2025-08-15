@@ -1,5 +1,6 @@
 using Form式泛用基督教會會員管理系統.SubForms.Account;
 using Form式泛用基督教會會員管理系統.SubForms.Announcement;
+using Form式泛用基督教會會員管理系統.SubForms.Events;
 using Form式泛用基督教會會員管理系統.SubForms.Family;
 using Form式泛用基督教會會員管理系統.SubForms.Member;
 
@@ -92,6 +93,27 @@ namespace Form式泛用基督教會會員管理系統
                 FrmAnnouncementView AV = new();
                 AV.MdiParent = this;
                 AV.Show();
+            }
+        }
+        /// <summary>活動排程設定</summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TsmiEventScheduleSetting_Click(object sender, EventArgs e)
+        {
+            bool FormFound = false;
+            foreach (Form F in this.MdiChildren)
+            {
+                if (F.Name == "FrmEventSettingView")
+                {
+                    F.WindowState = FormWindowState.Maximized;
+                    FormFound = true;
+                }
+            }
+            if (!FormFound)
+            {
+                FrmEventSettingView ESV = new();
+                ESV.MdiParent = this;
+                ESV.Show();
             }
         }
     }

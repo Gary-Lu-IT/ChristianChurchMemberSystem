@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("7d133d89-c230-4406-87b5-3362ce248117")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("WEBAPI_ChristianChurchMemberSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7395e0cab275ca16bc39c17c1431e574c106e4f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7840c70b1418a7afa593bb1bbbf64a25b878548f")]
 [assembly: System.Reflection.AssemblyProductAttribute("WEBAPI_ChristianChurchMemberSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WEBAPI_ChristianChurchMemberSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
