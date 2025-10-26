@@ -1,5 +1,4 @@
 ﻿using API_AllPurposeChurchMemberControl.ChurchMemberAccess;
-using DAL_AllPurposeChurchMemberControl.ChurchMembers.Announcements;
 using DAL_AllPurposeChurchMemberControl.ChurchMembers.Events;
 using DAL_AllPurposeChurchMemberControl.ChurchSystem;
 using Microsoft.AspNetCore.Authorization;
@@ -17,7 +16,7 @@ namespace WEBAPI_ChristianChurchMemberSystem.Controllers
         [HttpPost]
         [AllowAnonymous]
         [Route("[action]")]
-        public IActionResult AddRegularEventSetting([FromBody]ClsEvents events)
+        public IActionResult AddRegularEventSetting([FromBody]ClsEventSetting events)
         {
             try
             {
@@ -41,7 +40,7 @@ namespace WEBAPI_ChristianChurchMemberSystem.Controllers
         [HttpPost]
         [AllowAnonymous]
         [Route("[action]")]
-        public IActionResult UpdateRegularEventSetting([FromBody] ClsEvents events)
+        public IActionResult UpdateRegularEventSetting([FromBody] ClsEventSetting events)
         {
             try
             {
@@ -65,7 +64,7 @@ namespace WEBAPI_ChristianChurchMemberSystem.Controllers
         [HttpPost]
         [AllowAnonymous]
         [Route("[action]")]
-        public IActionResult DeleteRegularEventSetting([FromBody] ClsEventIdPack pack)
+        public IActionResult DeleteRegularEventSetting([FromBody] ClsEventSettingIdPack pack)
         {
             try
             {
@@ -113,7 +112,7 @@ namespace WEBAPI_ChristianChurchMemberSystem.Controllers
         [HttpPost]
         [AllowAnonymous]
         [Route("[action]")]
-        public IActionResult GetAnnouncementById([FromBody] ClsEventIdPack pack)
+        public IActionResult GetAnnouncementById([FromBody] ClsEventSettingIdPack pack)
         {
             try
             {

@@ -7,19 +7,19 @@
         <member name="T:WEBAPI_ChristianChurchMemberSystem.Controllers.ActivityController">
             <summary>活動與課程控制器</summary>
         </member>
-        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.ActivityController.AddRegularEventSetting(DAL_AllPurposeChurchMemberControl.ChurchMembers.Events.ClsEvents)">
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.ActivityController.AddRegularEventSetting(DAL_AllPurposeChurchMemberControl.ChurchMembers.Events.ClsEventSetting)">
             <summary>新增定期活動/課程設定</summary>
         </member>
-        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.ActivityController.UpdateRegularEventSetting(DAL_AllPurposeChurchMemberControl.ChurchMembers.Events.ClsEvents)">
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.ActivityController.UpdateRegularEventSetting(DAL_AllPurposeChurchMemberControl.ChurchMembers.Events.ClsEventSetting)">
             <summary>修改定期活動/課程設定</summary>
         </member>
-        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.ActivityController.DeleteRegularEventSetting(DAL_AllPurposeChurchMemberControl.ChurchMembers.Events.ClsEventIdPack)">
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.ActivityController.DeleteRegularEventSetting(DAL_AllPurposeChurchMemberControl.ChurchMembers.Events.ClsEventSettingIdPack)">
             <summary>刪除定期活動/課程設定</summary>
         </member>
         <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.ActivityController.GetRegularEventSettings">
             <summary>取得所有定期活動/課程設定。</summary>
         </member>
-        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.ActivityController.GetAnnouncementById(DAL_AllPurposeChurchMemberControl.ChurchMembers.Events.ClsEventIdPack)">
+        <member name="M:WEBAPI_ChristianChurchMemberSystem.Controllers.ActivityController.GetAnnouncementById(DAL_AllPurposeChurchMemberControl.ChurchMembers.Events.ClsEventSettingIdPack)">
             <summary>取得單筆定期活動/課程設定。</summary>
         </member>
         <member name="T:WEBAPI_ChristianChurchMemberSystem.Controllers.AnnouncementController">

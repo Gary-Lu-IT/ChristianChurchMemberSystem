@@ -303,7 +303,7 @@ namespace API_AllPurposeChurchMemberControl.ChurchMemberAccess
             {
                 title = events.EventName,
                 freq = events.Frequency,
-                holdtime = events.EventDate.ToString("yyyy/MM/dd HH:mm:ss)"),
+                holdtime = events.EventDate.ToString("yyyy/MM/dd HH:mm:ss"),
                 location = events.EventLocation,
                 leader = events.Leader
             });
